@@ -1,0 +1,636 @@
+[ {
+												"title" : "Domaine d'enseignement",
+												"isFolder" : true,
+												"hideCheckbox" : true,
+												"children" : [
+														{
+															"title" : "domaines d'enseignement du premier degré",
+															"key" : "scolomfr-voc-015-num-007",
+															"icon" : false,
+															"children" : [
+																	{
+																		"title" : "culture humaniste",
+																		"key" : "scolomfr-voc-015-num-096",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "découverte du monde",
+																		"key" : "scolomfr-voc-015-num-097",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "devenir élève",
+																		"key" : "scolomfr-voc-015-num-098",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "éducation physique et sportive",
+																		"key" : "scolomfr-voc-015-num-031",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "français",
+																		"key" : "scolomfr-voc-015-num-035",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "histoire des arts",
+																		"key" : "scolomfr-voc-015-num-041",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "instruction civique et morale",
+																		"key" : "scolomfr-voc-015-num-102",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "langue vivante",
+																		"key" : "scolomfr-voc-015-num-103",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "mathématiques",
+																		"key" : "scolomfr-voc-015-num-054",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "pratiques artistiques",
+																		"key" : "scolomfr-voc-015-num-105",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "s'approprier le langage",
+																		"key" : "scolomfr-voc-015-num-106",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "sciences expérimentales et technologie",
+																		"key" : "scolomfr-voc-015-num-107",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "techniques usuelles de l'information et de la communication",
+																		"key" : "scolomfr-voc-015-num-108",
+																		"icon" : false,
+																		"children" : []
+																	} ]
+														},
+														{
+															"title" : "domaines d'enseignement du second degré",
+															"key" : "scolomfr-voc-015-num-008",
+															"icon" : false,
+															"children" : [
+																	{
+																		"title" : "allemand",
+																		"key" : "scolomfr-voc-015-num-086",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "anglais",
+																		"key" : "scolomfr-voc-015-num-087",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "arabe",
+																		"key" : "scolomfr-voc-015-num-088",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "architecture et construction",
+																		"key" : "scolomfr-voc-015-num-002",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "arts, techniques et civilisations",
+																		"key" : "scolomfr-voc-015-num-079",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "arts (option)",
+																		"key" : "scolomfr-voc-015-num-003",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "arts du cirque",
+																		"key" : "scolomfr-voc-015-num-005",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "arts plastiques",
+																		"key" : "scolomfr-voc-015-num-006",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "biologie et physiopathologie humaines",
+																		"key" : "scolomfr-voc-015-num-009",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "biotechnologies",
+																		"key" : "scolomfr-voc-015-num-010",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "chimie, biochimie, sciences du vivant",
+																		"key" : "scolomfr-voc-015-num-011",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "chimie",
+																		"key" : "scolomfr-voc-015-num-012",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "chinois",
+																		"key" : "scolomfr-voc-015-num-089",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "cinéma - audiovisuel",
+																		"key" : "scolomfr-voc-015-num-013",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "communication et gestion des ressources humaines",
+																		"key" : "scolomfr-voc-015-num-014",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "comptabilité et finance d'entreprise",
+																		"key" : "scolomfr-voc-015-num-015",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "création et activités artistiques",
+																		"key" : "scolomfr-voc-015-num-016",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "création et culture design",
+																		"key" : "scolomfr-voc-015-num-017",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "création et innovation technologiques",
+																		"key" : "scolomfr-voc-015-num-018",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "danse",
+																		"key" : "scolomfr-voc-015-num-019",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "découverte professionnelle",
+																		"key" : "scolomfr-voc-015-num-020",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "design et arts appliqués",
+																		"key" : "scolomfr-voc-015-num-021",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "documentation",
+																		"key" : "scolomfr-voc-015-num-022",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "droit",
+																		"key" : "scolomfr-voc-015-num-023",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "droit et grands enjeux du monde contemporain",
+																		"key" : "scolomfr-voc-015-num-024",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "économie",
+																		"key" : "scolomfr-voc-015-num-025",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "économie approfondie",
+																		"key" : "scolomfr-voc-015-num-026",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "économie et droit",
+																		"key" : "scolomfr-voc-015-num-027",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "éducation civique, juridique et sociale",
+																		"key" : "scolomfr-voc-015-num-028",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "éducation civique",
+																		"key" : "scolomfr-voc-015-num-029",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "éducation musicale",
+																		"key" : "scolomfr-voc-015-num-030",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "éducation physique et sportive",
+																		"key" : "scolomfr-voc-015-num-031",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "énergies et environnement",
+																		"key" : "scolomfr-voc-015-num-032",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "enseignements technologiques transversaux",
+																		"key" : "scolomfr-voc-015-num-033",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "enseignement technologique en LV1",
+																		"key" : "scolomfr-voc-015-num-034",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "espagnol",
+																		"key" : "scolomfr-voc-015-num-090",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "étude de cas (arts appliqués)",
+																		"key" : "scolomfr-voc-015-num-078",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "expression plastique",
+																		"key" : "scolomfr-voc-015-num-080",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "français",
+																		"key" : "scolomfr-voc-015-num-035",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "géographie",
+																		"key" : "scolomfr-voc-015-num-036",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "gestion commerciale",
+																		"key" : "scolomfr-voc-015-num-037",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "gestion des systèmes d'information",
+																		"key" : "scolomfr-voc-015-num-038",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "gestion et finances",
+																		"key" : "scolomfr-voc-015-num-039",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "hébreu",
+																		"key" : "scolomfr-voc-015-num-091",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "histoire",
+																		"key" : "scolomfr-voc-015-num-040",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "histoire des arts",
+																		"key" : "scolomfr-voc-015-num-041",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "histoire et géographie",
+																		"key" : "scolomfr-voc-015-num-042",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "information et communication",
+																		"key" : "scolomfr-voc-015-num-043",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "informatique et sciences du numérique",
+																		"key" : "scolomfr-voc-015-num-044",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "innovation technologique et éco-conception",
+																		"key" : "scolomfr-voc-015-num-045",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "italien",
+																		"key" : "scolomfr-voc-015-num-092",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "japonais",
+																		"key" : "scolomfr-voc-015-num-093",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "langues et cultures de l'antiquité (grec)",
+																		"key" : "scolomfr-voc-015-num-046",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "langues et cultures de l'antiquité (latin)",
+																		"key" : "scolomfr-voc-015-num-047",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "langues et cultures de l'antiquité",
+																		"key" : "scolomfr-voc-015-num-001",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "langues régionales",
+																		"key" : "scolomfr-voc-015-num-048",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "langues vivantes",
+																		"key" : "scolomfr-voc-015-num-049",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "littérature",
+																		"key" : "scolomfr-voc-015-num-050",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "littérature étrangère en langue étrangère",
+																		"key" : "scolomfr-voc-015-num-051",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "littérature et société",
+																		"key" : "scolomfr-voc-015-num-052",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "management des organisations",
+																		"key" : "scolomfr-voc-015-num-053",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "mathématiques",
+																		"key" : "scolomfr-voc-015-num-054",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "mercatique",
+																		"key" : "scolomfr-voc-015-num-055",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "mesure et instrumentation",
+																		"key" : "scolomfr-voc-015-num-056",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "méthodes et pratiques scientifiques",
+																		"key" : "scolomfr-voc-015-num-057",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "musique",
+																		"key" : "scolomfr-voc-015-num-058",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "philosophie",
+																		"key" : "scolomfr-voc-015-num-059",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "physique",
+																		"key" : "scolomfr-voc-015-num-060",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "physique-chimie",
+																		"key" : "scolomfr-voc-015-num-061",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "portugais",
+																		"key" : "scolomfr-voc-015-num-094",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "principes fondamentaux de l'économie et de la gestion",
+																		"key" : "scolomfr-voc-015-num-062",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "recherche appliquée (arts)",
+																		"key" : "scolomfr-voc-015-num-081",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "représentation conventionnelle",
+																		"key" : "scolomfr-voc-015-num-082",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "ressources humaines et communication",
+																		"key" : "scolomfr-voc-015-num-064",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "russe",
+																		"key" : "scolomfr-voc-015-num-095",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "santé et social",
+																		"key" : "scolomfr-voc-015-num-065",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "sciences",
+																		"key" : "scolomfr-voc-015-num-066",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "sciences de gestion",
+																		"key" : "scolomfr-voc-015-num-067",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "sciences de l'ingénieur",
+																		"key" : "scolomfr-voc-015-num-068",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "sciences de la vie et de la Terre",
+																		"key" : "scolomfr-voc-015-num-069",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "sciences économiques et sociales",
+																		"key" : "scolomfr-voc-015-num-070",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "sciences et laboratoire",
+																		"key" : "scolomfr-voc-015-num-071",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "sciences et techniques sanitaires et sociales",
+																		"key" : "scolomfr-voc-015-num-072",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "sciences physiques appliquées",
+																		"key" : "scolomfr-voc-015-num-083",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "sciences physiques et chimiques en laboratoire",
+																		"key" : "scolomfr-voc-015-num-073",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "sciences sociales et politiques",
+																		"key" : "scolomfr-voc-015-num-074",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "systèmes d'information de gestion",
+																		"key" : "scolomfr-voc-015-num-075",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "systèmes d'information et numérique",
+																		"key" : "scolomfr-voc-015-num-076",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "technologie",
+																		"key" : "scolomfr-voc-015-num-077",
+																		"icon" : false,
+																		"children" : []
+																	},
+																	{
+																		"title" : "théâtre et expression dramatique",
+																		"key" : "scolomfr-voc-015-num-004",
+																		"icon" : false,
+																		"children" : []
+																	} ]
+														} ]
+											} ]

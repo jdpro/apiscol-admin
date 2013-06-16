@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lom xmlns="http://ltsc.ieee.org/xsd/LOM" xmlns:lomfr="http://www.lom-fr.fr/xsd/LOMFR"
+	xmlns:scolomfr="http://www.lom-fr.fr/xsd/SCOLOMFR" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://ltsc.ieee.org/xsd/LOM http://lom-fr.fr/scolomfr/xsd/scolomfrv1.0/scolomfr.xsd">
+	<general>
+		<identifier>
+			<catalog />
+			<entry />
+		</identifier>
+		<title>
+			<string language="fr">Non renseigné</string>
+		</title>
+		<language>fr</language>
+		<description>
+			<string language="fr">Non renseigné</string>
+		</description>
+	</general>
+	<lifeCycle>
+	</lifeCycle>
+	<metaMetadata>
+		<identifier>
+			<catalog />
+			<entry />
+		</identifier>
+		<metadataSchema>SCOLOMFRv1.0</metadataSchema>
+		<language>fr</language>
+	</metaMetadata>
+	<technical>
+		<location></location>
+		<size>0</size>
+		<format></format>
+	</technical>
+	<educational>
+	</educational>
+	<rights>
+		<cost>
+			<source>LOMv1.0</source>
+			<value>no</value>
+		</cost>
+		<copyrightAndOtherRestrictions>
+			<source>LOMv1.0</source>
+			<value>no</value>
+		</copyrightAndOtherRestrictions>
+	</rights>
+</lom>

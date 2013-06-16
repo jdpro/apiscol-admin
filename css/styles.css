@@ -1,0 +1,1643 @@
+@CHARSET "UTF-8";
+
+html.js,body {
+	font-family: arial, helvetica, sans-serif;
+	overflow: visible;
+}
+
+.not-yet {
+	font-size: 24px;
+	padding: 1em;
+	margin: 1em;
+}
+/*
+Page header
+*/
+html.js a,html.js a:hover,html.js a:active,html.js a:focus {
+	outline: 0 !important;
+}
+
+html.js header.ui-helper-clearfix div.status-bar span.ui-state-highlight
+	{
+	margin-top: 2px;
+	display: inline-block;
+	margin-top: 1px;
+	padding: 3px 25px 3px 3px;
+	margin-right: 1em;
+	height: 1.1em;
+	max-width: 70%;
+	position: relative;
+}
+
+html.js body header.ui-helper-clearfix div.status-bar h2 {
+	font-size: 14px;
+	margin: 4px 0 3px 10px;
+	float: left;
+}
+
+html.js header.ui-helper-clearfix div.status-bar {
+	height: 1.5em;
+	overflow: visible;
+}
+
+html.js header.ui-helper-clearfix div.status-bar div.connexion-box,html.js body header.ui-helper-clearfix div.status-bar div.private-error-message
+	{
+	width: 250px;
+	z-index: 9999;
+	padding: 1em;
+	text-align: center;
+}
+
+html.js header.ui-helper-clearfix div.status-bar span.ui-state-highlight img
+	{
+	vertical-align: middle;
+	margin: 0 3px;
+}
+
+html.js header.ui-helper-clearfix div.status-bar div.connexion-box form input
+	{
+	margin-top: 0.5em;
+}
+
+html.js body header.ui-helper-clearfix div.status-bar div.connexion-box a
+	{
+	margin-top: 0.5em;
+	display: inline-block;
+}
+
+html.js body header.ui-helper-clearfix div.status-bar span.status span.ui-button-icon-primary.ui-icon-connect
+	{
+	background-image: url("../img/connect.png");
+}
+
+html.js body header.ui-helper-clearfix div.status-bar span.status span.ui-button-icon-primary.ui-icon-disconnect
+	{
+	background-image: url("../img/disconnect.png");
+}
+
+html.js body header.ui-helper-clearfix div.status-bar span.status.ui-button.ui-button-icon-only,html.js body header.ui-helper-clearfix div.status-bar span.status form span.disconnect-wrapper
+	{
+	width: 1.5em;
+	height: 1.5em;
+}
+
+html.js body header.ui-helper-clearfix div.status-bar span.private-error-message-button
+	{
+	width: 1.1em;
+	height: 1.1em;
+	display: inline-block;
+	margin-left: 0.5em;
+	vertical-align: bottom;
+	position: absolute;
+	right: 0px;
+	top: 1px;
+}
+
+html.js div.content div a {
+	text-decoration: none;
+}
+
+body>header {
+	overflow: visible !important;
+	padding: 0;
+}
+
+body>header h1 img.logo {
+	width: 54px;
+	vertical-align: text-top;
+	margin: 0 0.75em;
+	float: left;
+}
+
+body>header h1>span.title-text {
+	float: left;
+	white-space: nowrap;
+	max-width: 80%;
+	overflow: hidden;
+}
+
+html.js body>header h1 {
+	margin: 0 0 0.3em 0;
+	font-size: 32px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+html.js div.ui-layout-center table thead tr th span.delete-selection-button,html.js div.ui-layout-center table thead tr th span.refresh-selection-button
+	{
+	width: 16px;
+}
+/*
+Language pad
+*/
+html.js body header.ui-helper-clearfix form.pad_langs {
+	float: right;
+	display: block;
+	width: 100px;
+}
+
+html.js body header.ui-helper-clearfix h1 form.pad_langs label {
+	margin-left: 3px;
+}
+
+html.js body header.ui-helper-clearfix h1 form.pad_langs input {
+	visibility: hidden;
+	width: 0;
+}
+
+html.js body header.ui-helper-clearfix h1 form.pad_langs label img.item_pad_lang
+	{
+	margin: 1px;
+	cursor: pointer;
+}
+
+html.js body header.ui-helper-clearfix h1 form.pad_langs label img.item_pad_lang.active
+	{
+	border: 1px solid #c00;
+	display: inline-block;
+	margin: 0;
+}
+
+/*
+Status bar
+*/
+html.js header.ui-helper-clearfix div.status-bar {
+	padding: 0.3em;
+	margin-bottom: 0.3em;
+	position: relative;
+}
+
+html.js body>header div.status-bar span.status.content {
+	float: left;
+	margin-left: 1em;
+}
+
+html.js body>header div span.status.connexion,html.js body>header div span.status.disconnect
+	{
+	position: absolute;
+	right: 1em;
+	top: 2px;
+}
+
+html.js body header.ui-helper-clearfix div.status-bar span.status form {
+	float: right;
+}
+
+html.js body header.ui-helper-clearfix div.status-bar span.status span.user-login
+	{
+	margin: 3px 15px 0 0;
+	display: inline-block;
+}
+
+/*
+Menu
+*/
+html.js .menu {
+	height: 40px;
+}
+
+html.js header.ui-helper-clearfix>nav .menu-item {
+	z-index: 2000;
+}
+
+html.js .menu-item,html.js .sub-menu-item {
+	z-index: 999;
+}
+
+html.js header.ui-helper-clearfix nav ul.menu li.menu-item ul.ui-state-active li.sub-menu-item
+	{
+	opacity: 1 !important;
+	background-color: #ffffff;
+	z-index: 2000;
+}
+
+html.js header.ui-helper-clearfix nav ul.menu li.menu-item ul.ui-state-active li.sub-menu-item a
+	{
+	padding-left: 0;
+}
+
+html.js header.ui-helper-clearfix>nav ul.menu li.menu-item ul.ui-state-active
+	{
+	padding-left: 0;
+	z-index: 2000;
+}
+
+html.js .menu-item {
+	width: 110px;
+	text-align: center;
+}
+
+html.js .menu li {
+	position: relative;
+	list-style: none;
+	float: left;
+	display: block;
+	height: 40px;
+}
+
+html.js div#tabs nav ul.menu li#main_menu_item_back.menu-item a img {
+	vertical-align: middle;
+	width: 16px;
+}
+
+html.js button#rows-per-page-open.ui-button span.ui-button-icon-primary.ui-icon-list
+	{
+	background-image: url("../img/list.png");
+}
+
+html.js header.ui-helper-clearfix div.status-bar span.private-error-message-button span.ui-button-icon-primary
+	{
+	background-image: url("../img/bug.png");
+}
+
+html.js .menu li a,html.js .menu li span {
+	display: block;
+	padding: 0;
+	margin: 6px 0;
+	line-height: 28px;
+	text-decoration: none;
+	border-left: 1px solid #726d53;
+	border-right: 1px solid #4f5058;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	color: #4F5058;
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
+}
+
+html.js body div.content div#tabs nav ul.menu li.menu-item.ui-state-focus a
+	{
+	border: none;
+}
+
+html.js .menu li:first-child a {
+	border-left: none;
+}
+
+html.js .menu li:last-child a {
+	border-right: none;
+}
+
+html.js .menu li:hover>a {
+	color: #8fde62;
+}
+
+html.js body>header div ul.menu {
+	margin-top: 2px;
+}
+
+html.js .menu ul {
+	position: absolute;
+	top: 40px;
+	left: 0;
+	-webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+	-webkit-transition: opacity .25s ease .1s;
+	-moz-transition: opacity .25s ease .1s;
+	-o-transition: opacity .25s ease .1s;
+	-ms-transition: opacity .25s ease .1s;
+	transition: opacity .25s ease .1s;
+	background-color: #fff;
+}
+
+html.js .menu li:hover>ul {
+	opacity: 1;
+}
+
+html.js .menu ul li {
+	height: 0;
+	overflow: hidden;
+	padding: 0;
+	-webkit-transition: height .25s ease .1s;
+	-moz-transition: height .25s ease .1s;
+	-o-transition: height .25s ease .1s;
+	-ms-transition: height .25s ease .1s;
+	transition: height .25s ease .1s;
+}
+
+html.js .menu li:hover>ul li {
+	height: 36px;
+	overflow: visible;
+	padding: 0;
+}
+
+html.js .menu ul li a {
+	width: 100px;
+	padding: 4px 0 4px 40px;
+	margin: 0;
+	border: none;
+	border-bottom: 1px solid #353539;
+}
+
+html.js .menu ul li:last-child a {
+	border: none;
+}
+/*
+Accueil
+*/
+html.js body>div.content div.home-bloc {
+	padding: 0.5em;
+	width: 600px;
+	font-size: 24px;
+	margin: 25px auto;
+}
+
+html.js body>div.content div.home-bloc img {
+	vertical-align: middle;
+	margin-right: 40px;
+	width: 42px;
+}
+/*
+Resources list
+*/
+html.js body>div.content {
+	margin: 0 auto;
+}
+
+html.js body>div.content div.pane div#facets.basic h3.ui-accordion-header
+	{
+	font-size: 13px;
+}
+
+html.js .pane {
+	display: none; /* will appear when layout inits */
+}
+
+html.js body>div.content>div.ui-layout-west div#facets.basic {
+	margin: -9px;
+}
+
+html.js body>div.content>div.ui-layout-west div#facets.basic h3.ui-accordion-header
+	{
+	height: 1em;
+	overflow: hidden;
+}
+
+html.js body>div.content>div.ui-layout-west div#facets.basic h3.ui-accordion-header a
+	{
+	white-space: nowrap;
+	padding-right: 1em;
+	display: inline-block;
+}
+
+html.js body>div.content>div.ui-layout-west div#facets.basic div#ui-accordion-facets-panel-0.ui-accordion-content ul li ul
+	{
+	padding-left: 1.5em;
+}
+
+html.js body>div.content>div.ui-layout-west div#facets.basic div.ui-accordion-content ul li
+	{
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+html.js body>div.content>div.ui-layout-west div#facets.basic div.ui-accordion-content
+	{
+	padding: 0;
+	overflow-x: hidden !important;
+	overflow-y: auto !important;
+}
+
+html.js body>div.content>div.ui-layout-west div#facets.basic div.ui-accordion-content ul li a
+	{
+	color: blue;
+	text-decoration: underline !important;
+	font-size: 70%;
+	line-height: 1.3em;
+}
+
+html.js body>div.content>div.ui-layout-west div#facets.basic div.ui-accordion-content ul
+	{
+	padding-left: 0.5em;
+}
+
+html.js body>div.content>div.ui-layout-north div.filters-list a.ui-state-default,html.js div.content div.pane div.filters-list span.facet a span.ui-icon
+	{
+	display: inline-block;
+}
+
+html.js div.content div.pane div.inner-layout div.ui-layout-center table tbody tr td strong
+	{
+	font-size: 14px;
+}
+
+html.js div.content div.pane div.filters-list span.facet a span.ui-icon
+	{
+	vertical-align: middle;
+	margin-right: 3px;
+}
+
+html.js div.content div.pane div.filters-list a.ui-state-default {
+	vertical-align: top;
+}
+
+html.js body>div.content div.pane div.filters-list span.facet {
+	border-radius: 3px 3px 3px 3px;
+	background-color: #999999;
+	color: #FFFFFF;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 14px;
+	padding: 1px 6px;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	white-space: nowrap;
+	vertical-align: bottom;
+}
+
+html.js div.content div.pane table {
+	width: 100%;
+}
+
+html.js body div.content div.pane div.inner-layout div.ui-layout-center table tbody tr td
+	{
+	height: 22px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+html.js body div.content div.pane div.inner-layout div.ui-layout-center table tbody tr td form.ui-button,html.js body div.content div.pane div.inner-layout div.ui-layout-center table tbody tr td a.resource-download-link
+	{
+	width: 16px;
+	height: 16px;
+}
+
+html.js div.content div.pane table tbody tr td input {
+	vertical-align: text-top;
+}
+
+html.js div.content div.pane table tbody tr:nth-child(even) {
+	background: #eeeeee;
+}
+
+html.js div.content div.pane table tbody tr td {
+	padding: 2px;
+}
+
+html.js body div.content div.pane div.inner-layout div.ui-layout-center table tbody tr td label.css-label a
+	{
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+}
+
+html.js div.content div.pane div.inner-layout div.ui-layout-center table tbody tr td strong a:hover
+	{
+	color: #003;
+}
+
+html.js div.content div.pane div.inner-layout div.ui-layout-south .pagination
+	{
+	font-size: 12px;
+}
+
+html.js div.content div.pane div.inner-layout div.ui-layout-south .pagination.current-page
+	{
+	border-radius: 3px 3px 3px 3px;
+	background-color: #999999;
+	color: #FFFFFF;
+	display: inline-block;
+	font-weight: bold;
+	line-height: 14px;
+	padding: 1px 6px;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	vertical-align: baseline;
+	white-space: nowrap;
+}
+
+html.js div.content div.pane div.query-container {
+	height: 2em;
+	margin: -5px -5px 10px -5px;
+}
+
+html.js div.content div.pane div.query-container input#query {
+	width: 97%;
+}
+
+html.js body div.content div.pane div.filters-list {
+	display: inline-block;
+	float: left;
+}
+
+html.js body div.content div.pane button#rows-per-page-open.ui-button {
+	width: 280px;
+	float: right;
+	z-index: 100;
+}
+
+html.js body div.content div.pane ul#rows-per-page.ui-popup {
+	width: 180px;
+	float: right;
+	z-index: 100;
+}
+
+html.js body div.content div.ui-layout-resizer {
+	z-index: 0 !important;
+}
+
+html.js body div.content div.pane button#rows-per-page-open.ui-button {
+	margin-top: -5px;
+}
+
+html.js body div.content div.pane.ui-layout-north {
+	z-index: 2 !important;
+}
+
+html.js div.content div.pane div.inner-layout div.ui-layout-center table thead tr th
+	{
+	text-align: left;
+	padding: 2px;
+}
+/*
+display
+*/
+html.js div.content div#display.detail-pane div.display-wrapper {
+	width: 800px;
+	top: 5em;
+	left: 2em;
+	position: absolute;
+	z-index: 1;
+}
+
+html.js body div.content div.detail-pane {
+	clear: both;
+}
+
+html.js div.content div#display.detail-pane div.display-options button#change-display-mode.ui-button,html.js div.content div#display.detail-pane div.display-options ul#display-mode.ui-popup
+	{
+	width: 200px;
+}
+
+html.js div.content div#display.detail-pane div.display-options button#change-display-device.ui-button
+	{
+	right: 20px;
+	display: inline-block;
+	position: absolute;
+}
+
+html.js body div.content div#display.detail-pane div.pane div.pane-header-wrapper
+	{
+	width: 900px;
+}
+
+html.js div.content div#display.detail-pane div.display-options button#change-display-mode.ui-button
+	{
+	left: 0px;
+	display: inline-block;
+	position: absolute;
+}
+
+html.js div.content div#display.detail-pane div.display-options button#change-display-device.ui-button,html.js div.content div#display.detail-pane div.display-options ul#display-device.ui-popup
+	{
+	width: 260px;
+}
+
+html.js div.content div#display.detail-pane div.display-options ul#display-mode.ui-popup li,html.js div.content div#display.detail-pane div.display-options ul#display-device.ui-popup li
+	{
+	list-style: none;
+	padding: 7px;
+}
+
+html.js div.content div#display.detail-pane div.display-options {
+	width: 500px;
+	float: left;
+	margin: 0 0 0 2em;
+	text-align: center;
+	height: 35px;
+	overflow: visible;
+	z-index: 2;
+	position: relative;
+}
+
+html.js div.content div#display.detail-pane div.pane h2 img {
+	margin: 5px 20px;
+	vertical-align: middle;
+	width: 32px;
+}
+
+html.js div.content div#display.detail-pane div.pane h2 {
+	display: inline-block;
+	padding-right: 20px;
+	margin-top: 0;
+	float: left;
+}
+
+html.js button#change-display-mode.ui-button span.ui-button-icon-primary.ui-icon-eye
+	{
+	background-image: url("../img/eye.png");
+}
+
+html.js button#change-display-device.ui-button span.ui-button-icon-primary.ui-icon-device
+	{
+	background-image: url("../img/device.png");
+}
+
+html.js div#display.detail-pane div.pane div.custom-image-input-container form#set_custom_thumb
+	{
+	cursor: pointer;
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+/*
+uris
+*/
+html.js body div.content div#uris.detail-pane {
+	padding: 1em;
+}
+
+html.js div.content div#uris.detail-pane h2.ui-state-highlight {
+	display: inline-block;
+	padding-right: 20px;
+	margin: 0 0 1em 0;
+}
+
+html.js div.content div#uris.detail-pane h2.ui-state-highlight img {
+	margin: 5px 20px;
+	vertical-align: middle;
+	width: 32px;
+}
+
+html.js div.content div#uris.detail-pane div.uris-bloc {
+	padding: 0.5em 1em;
+	margin: 1em;
+}
+
+html.js body>div.content div.pane div.filters-list span.facet,html.js .badge
+	{
+	border-radius: 3px 3px 3px 3px;
+	background-color: #999999;
+	color: #FFFFFF;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 14px;
+	padding: 3px 6px;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	white-space: nowrap;
+	vertical-align: bottom;
+}
+
+html.js .badge.badge-info {
+	background-color: #3A87AD;
+}
+
+html.js .badge.badge-error {
+	background-color: #cc0000;
+}
+
+html.js .badge.badge-success {
+	background-color: #468847;
+}
+
+html.js body div.content div#uris.detail-pane div.uris-bloc h3 span.server-origin span.badge
+	{
+	display: inline-block;
+	width: 200px;
+	text-align: center;
+}
+
+html.js body div.content div#search.detail-pane div.search-results div.spellcheck-suggest a
+	{
+	color: blue;
+	text-decoration: underline;
+}
+
+html.js body div.content div#search.detail-pane div.search-results p.badge
+	{
+	margin: 0 0 0 1em;
+}
+
+html.js div.content div#uris.detail-pane div.uris-bloc details summary a,html.js  div.content div#uris.detail-pane div.uris-bloc p a,html.js  div.content div#uris.detail-pane div.uris-bloc details div ul li a
+	{
+	margin-left: 1em;
+}
+
+html.js div.content div#uris.detail-pane div.uris-bloc p span.puce {
+	font-size: 18px;
+}
+
+html.js div.content div#uris.detail-pane div.uris-bloc details div h4 {
+	margin: 0.5em 0;
+}
+
+html.js div.content div#uris.detail-pane div.uris-bloc h3 span.badge,html.js div.content div#uris.detail-pane div.uris-bloc h3 span.server-origin,html.js div.content div#uris.detail-pane div.uris-bloc h3 span.server-origin img
+	{
+	vertical-align: middle;
+}
+
+html.js div.content div#uris.detail-pane div.uris-bloc h3 span.server-origin
+	{
+	float: right;
+	background-color: #fff;
+	z-index: 999;
+	position: relative;
+}
+
+html.js body div.content div#uris.detail-pane div.uris-bloc h3 {
+	margin-bottom: 0.3em;
+}
+
+html.js div.content div#uris.detail-pane div.uris-bloc h3 span.server-origin img
+	{
+	margin-right: 0.3em;
+}
+/*
+refresh
+*/
+html.js body div.content div#refresh.detail-pane div.pane h2.ui-state-highlight img
+	{
+	margin: 5px 20px;
+	vertical-align: middle;
+	width: 32px;
+}
+
+html.js body div.content div#refresh.detail-pane div.pane h2.ui-state-highlight
+	{
+	display: inline-block;
+	padding-right: 20px;
+	margin-top: 0;
+}
+
+html.js div.content div#display.detail-pane div.pane div#carousel img {
+	width: 96px;
+	cursor: pointer;
+}
+
+html.js div#display.detail-pane div#carousel.ui-carousel div.wrapper form.choose-thumb:hover
+	{
+	border-top: #cc0000 2px solid;
+}
+
+html.js div#display.detail-pane div#carousel.ui-carousel div.wrapper form.choose-thumb
+	{
+	border: #eee 1px solid;
+	border-top: #ffffff 2px solid;
+}
+
+html.js div.content div#display.detail-pane div.pane ul li {
+	list-style: none;
+	float: left;
+}
+/*
+edit
+*/
+html.js body div.content div#edit.detail-pane div.pane form.add-content input.ui-button
+	{
+	width: 400px;
+	margin: 1em auto;
+	display: block;
+}
+
+html.js body div#edit.detail-pane div.pane h2.ui-state-highlight img {
+	margin: 5px 20px;
+	vertical-align: middle;
+	width: 32px;
+}
+
+html.js div#edit.detail-pane div.pane div.progress div#upload-result-status,html.js div#add-metadata-result div.content-suggestion-wrapper div#upload-result-status
+	{
+	margin: 5px 50px;
+	padding: 10px;
+	font-weight: bold;
+}
+
+html.js div#edit.detail-pane div.pane div.progress div#upload-result-status img.status-icon,html.js div#add-metadata-result div#upload-result-status.ui-corner-all img.status-icon
+	{
+	margin-right: 10px;
+}
+
+html.js div#edit.detail-pane div.pane div.progress div#upload-result-message,html.js div#add-metadata-result div.content-suggestion-wrapper div#upload-result-message
+	{
+	margin: 5px 50px;
+	padding: 10px;
+}
+
+html.js body div.content div#edit.detail-pane div.pane ul.files-list {
+	list-style: none;
+	margin: 1em 0;
+	padding: 0;
+}
+
+html.js body div.content div#edit.detail-pane div.pane ul.files-list li
+	{
+	font-weight: bold;
+	margin: 0;
+	padding: 3px 10px 5px 10px;
+	border-bottom: 1px solid #ccc;
+	color: #666;
+	height: 20px;
+}
+
+html.js body div.content div#edit.detail-pane div.pane ul.files-list li img
+	{
+	padding: 3px 4px;
+	vertical-align: middle;
+}
+
+html.js body div.content div#edit.detail-pane div.pane ul.files-list li span.do-main-file form.ui-button span.ui-icon-main
+	{
+	background-image: url("../img/do-main.png");
+}
+
+html.js body div.content div#edit.detail-pane div.pane ul.files-list li a.ui-button span.ui-icon-download
+	{
+	background-image: url("../img/download.png");
+}
+
+html.js body div.content div#edit.detail-pane div.pane ul.files-list li span form.ui-button span.ui-icon-wait
+	{
+	background-image: url("../img/wait-round.gif");
+}
+
+html.js body div#refresh.detail-pane div.pane div.refresh-control form.ui-button span.ui-icon-refresh-state-wait
+	{
+	background-image: url("../img/refresh-icon-wait.gif");
+}
+
+html.js body div#refresh.detail-pane div.pane div.refresh-control form.ui-button span.ui-icon-refresh-state-error
+	{
+	background-image: url("../img/refresh-icon-error.gif");
+}
+
+html.js body div#refresh.detail-pane div.pane div.refresh-control form.ui-button span.ui-icon-refresh-state-success
+	{
+	background-image: url("../img/refresh-icon-success.gif");
+}
+
+html.js body div#refresh.detail-pane div.pane div.refresh-control form.ui-button span.ui-icon-refresh-state
+	{
+	background-image: url("../img/refresh-icon.gif");
+}
+
+html.js body div.content div#refresh.detail-pane div.pane div.refresh-control form#refresh-resource-preview.ui-button span.ui-button-icon-primary.ui-icon-preview
+	{
+	background-image: url("../img/eye.png");
+}
+
+html.js body div.content div#refresh.detail-pane div.pane div.refresh-control form#refresh-resource-archive.ui-button span.ui-button-icon-primary.ui-icon-archive
+	{
+	background-image: url("../img/archive.png");
+}
+
+html.js body div.content div#refresh.detail-pane div.pane div.refresh-control form#refresh-resource-index.ui-button span.ui-button-icon-primary.ui-icon-solr,html.js body div.content div#refresh.detail-pane div.pane div.refresh-control form#refresh-meta-index.ui-button span.ui-button-icon-primary.ui-icon-solr
+	{
+	background-image: url("../img/solr.png");
+}
+
+html.js body div.content div#refresh.detail-pane div.pane div.refresh-control form#sync-tech-infos.ui-button span.ui-button-icon-primary.ui-icon-tech
+	{
+	background-image: url("../img/technical.png");
+}
+
+html.js body div.content div#refresh.detail-pane div.pane div.refresh-control
+	{
+	clear: left;
+	margin-top: 1em;
+	width: 600px;
+}
+
+html.js body div.content div#refresh.detail-pane div.pane div.refresh-control form.ui-button
+	{
+	float: left;
+	width: 400px;
+}
+
+html.js body div.content div#refresh.detail-pane div.pane div.refresh-control div.ui-corner-all
+	{
+	float: left;
+	width: 150px;
+	padding: 5px;
+	margin-top: 3px;
+	margin-left: 1em;
+}
+
+html.js body div.content div#refresh.detail-pane div.pane div.refresh-control div.ui-corner-all h5,html.js body div.content div#refresh.detail-pane div.pane div.refresh-control div.ui-corner-all p
+	{
+	margin: 0;
+}
+
+html.js body div.content div#refresh.detail-pane div.pane div.refresh-control div.ui-corner-all p
+	{
+	font-size: 12px;
+}
+
+html.js body div.content div#edit.detail-pane div.pane ul.files-list li .ui-button
+	{
+	width: 16px;
+	height: 16px;
+	margin-left: 3px;
+}
+
+html.js body div.content div#edit.detail-pane div.pane ul.files-list li.main-file span.main-file
+	{
+	display: none;
+}
+
+html.js body div.content div#edit.detail-pane div.pane div.file-input-container form#send_file span.checkbox-wrapper
+	{
+	margin-left: 3em;
+	z-index: 9999;
+	position: relative;
+}
+
+html.js body div.content div#edit.detail-pane div.pane div.progress {
+	margin: auto auto;
+	width: 400px;
+	padding: 1px;
+	border-radius: 3px;
+}
+
+html.js body div.content div#edit.detail-pane div.pane div.file-input-container form#send_file div.bar
+	{
+	left: 0;
+	width: 190px;
+	height: 5px;
+	z-index: 9999;
+}
+
+html.js body div.content div#edit.detail-pane div.pane ul.files-list li span.file-title
+	{
+	margin-left: 1em;
+}
+
+html.js body div.content div#edit.detail-pane div.pane ul.files-list li span.delete-file
+	{
+	display: inline-block;
+}
+
+html.js body div.content div#edit.detail-pane div.pane div.ui-state-error
+	{
+	padding: 0.7em;
+	font-size: 18px;
+	font-weight: bold;
+	width: 400px;
+	margin: 2em auto 0 auto;
+	text-align: center;
+}
+
+html.js div#edit.detail-pane div.pane form#formulaire_scolomfr div#visualisation div.cadre details
+	{
+	border: none;
+}
+/*
+scolomfr
+*/
+html.js form#formulaire_scolomfr div#visualisation div.cadre div.element div.elt_champ_form div.purpose
+	{
+	display: none;
+}
+
+html.js form#formulaire_scolomfr {
+	z-index: 0;
+	margin-top: 77px;
+}
+
+html.js body div.content div#edit.detail-pane div.pane.ui-layout-west h2.ui-state-highlight
+	{
+	position: fixed;
+	width: 500px;
+	margin-top: 29px;
+}
+
+html.js body div.content div#edit.detail-pane div.pane.ui-layout-west div.fixed-title-wrapper
+	{
+	width: 99%;
+	background-color: white;
+	opacity: 1;
+	height: 64px;
+	margin: -10px;
+	z-index: 999;
+	position: fixed;
+}
+
+html.js div#edit.detail-pane div.pane form#formulaire_scolomfr div#visualisation div.cadre details div div.element
+	{
+	padding: 3px 3px 3px 15px;
+}
+
+html.js body div.content div#edit.detail-pane div.pane div.fixed-title-wrapper h2.ui-state-highlight.submit-button-container span.ui-button span.ui-button-icon-primary
+	{
+	background-image: url("../img/save_icon.png");
+	width: 32px;
+	height: 32px;
+	margin-left: -16px;
+	margin-top: -16px;
+}
+
+html.js body div.content div#edit.detail-pane div.pane div.fixed-title-wrapper h2.ui-state-highlight.submit-button-container span.ui-button span.ui-button-icon-primary.ui-icon-wait
+	{
+	background-image: url("../img/wait-round.gif");
+}
+
+html.js body div.content div#edit.detail-pane div.pane div.fixed-title-wrapper h2.ui-state-highlight.submit-button-container span.ui-button
+	{
+	display: block;
+	width: 38px;
+	height: 38px;
+	float: right;
+	margin-right: 12px;
+}
+
+html.js body div.content div#edit.detail-pane div.pane form#formulaire_scolomfr div#visualisation div.cadre details div div#keyword-container.element div.elt_champ_form span.delete-keyword-button span.ui-button-icon-primary,html.js body div.content div#edit.detail-pane div.pane form#formulaire_scolomfr div#visualisation div.cadre details div div.entry-list-container.element div.elt_champ_form span.delete-entry-button span.ui-button-icon-primary
+	{
+	background-image: url("../img/delete-icon.png");
+}
+
+html.js body div.content div#edit.detail-pane div.pane form#formulaire_scolomfr div#visualisation div.cadre details div div#keyword-container.element div.elt_champ_form span.delete-keyword-button.ui-button,html.js body div.content div#edit.detail-pane div.pane form#formulaire_scolomfr div#visualisation div.cadre details div div.entry-list-container.element div.elt_champ_form span.delete-entry-button
+	{
+	width: 22px;
+	height: 22px;
+}
+
+html.js body div.content div#edit.detail-pane div.pane form#formulaire_scolomfr input[type=submit]
+	{
+	display: none;
+}
+
+html.js body div.content div#edit.detail-pane div.pane form#formulaire_scolomfr div#visualisation div.cadre details div div.entry-list-container.element span.register-entry span.ui-button-icon-primary
+	{
+	background-image: url("../img/ajouter.png");
+}
+
+html.js body div.content div#edit.detail-pane div.pane form#formulaire_scolomfr div#visualisation div.cadre details div div.entry-list-container.element span.register-entry
+	{
+	margin-left: 1em;
+}
+
+html.js body div.content div#edit.detail-pane div.pane form#formulaire_scolomfr div#visualisation div.cadre details div div.element div span.ui-state-error.duplicate-alert
+	{
+	margin-left: 1em;
+	padding: 3px;
+	display: none;
+}
+
+html.js body div.content div#edit.detail-pane div.pane form#formulaire_scolomfr div#visualisation div.cadre details div div.entry-list-container.element div.elt_champ_form span.ui-state-highlight
+	{
+	width: 200px;
+	padding: 3px;
+}
+
+html.js body div.content div#edit.detail-pane div.pane form#formulaire_scolomfr div#visualisation div.cadre details div div.entry-list-container.element div.elt_champ_form
+	{
+	float: left;
+	margin-left: 1em;
+}
+
+html.js body div.content div#edit.detail-pane div.pane form#formulaire_scolomfr div#visualisation div.cadre details div div.entry-list-container.element div.entries-container
+	{
+	clear: left;
+}
+
+html.js div#edit.detail-pane form#formulaire_scolomfr div#visualisation div.cadre details div.element div.elt_champ_form ul.tagit li.tagit-new input.ui-widget-content
+	{
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+/*
+edit url
+*/
+html.js body div.content div#edit.detail-pane div.pane form#update_url input[type=submit]
+	{
+	display: none;
+}
+
+html.js body div.content div#edit.detail-pane div.pane form#update_url  span.ui-button-icon-primary.ui-icon-valid
+	{
+	background-image: url("../img/check.png");
+	height: 24px;
+	width: 24px;
+	margin-top: -12px;
+	margin-left: -3px;
+}
+
+html.js body div.content div#edit.detail-pane div.pane form#update_url  span.url-submit
+	{
+	margin-top: 12px;
+	margin-right: 12%;
+	float: right;
+}
+
+html.js body div.content div#edit.detail-pane div.pane form#update_url input[type=text],html.js body div.content div#search.detail-pane form#search_test_request input[type=text]
+	{
+	margin-top: 1em;
+	width: 88%;
+	padding: 5px;
+	background: none repeat scroll 0 0 #ffffff;
+	border: 2px solid #cc0000;
+	color: #000;
+}
+
+html.js body div.content div#edit.detail-pane div.pane form#update_url input[type=text].focusField,html.js body div.content div#search.detail-pane form#search_test_request input[type=text].focusField
+	{
+	background: none repeat scroll 0 0 #EFF5FF;
+	border: 2px solid #73A6FF;
+	color: #000000;
+}
+
+html.js body div.content div#edit.detail-pane div.pane form#update_url a.ui-button
+	{
+	width: 16px;
+	height: 16px;
+	margin-left: 5px;
+}
+/*
+research test
+*/
+html.js body div.content div#search.detail-pane form#search_test_request
+	{
+	display: block;
+	width: 800px;
+	margin: 1em;
+}
+
+html.js body div.content div#search.detail-pane form#search_test_request input[type=submit]
+	{
+	width: 200px;
+	float: left;
+	margin-top: -2px;
+	border-radius: 0;
+}
+
+html.js body div.content div#search.detail-pane form#search_test_request input[type=text]
+	{
+	width: 400px;
+	float: left;
+	margin-top: 0;
+}
+
+html.js body div.content div#search.detail-pane div.search-results {
+	padding: 1em;
+	width: 700px;
+}
+
+html.js body div.content div#search.detail-pane div.search-results h3 {
+	clear: both;
+	display: block;
+	padding: 7px;
+	margin: 0em auto;
+	width: 300px;
+}
+
+html.js body div.content div#search.detail-pane div.ui-layout-center div.search-results h4.ui-state-highlight
+	{
+	padding: 5px;
+}
+
+html.js body div.content div#search.detail-pane div.search-results ul li em,html.js body div.content div#search.detail-pane div.search-results ul li b
+	{
+	background-color: yellow;
+	font-weight: bold;
+	color: #ff0000;
+}
+
+html.js body div.content div#search.detail-pane div.search-results ul li
+	{
+	list-style: none;
+}
+
+html.js body div.content div#search.detail-pane div.ui-layout-west div.facets-results ul li h4
+	{
+	margin: 0.5em;
+}
+
+html.js body div.content div#search.detail-pane div.search-results li {
+	margin-top: 1em;
+}
+
+html.js body div.content div#search.detail-pane div.search-results div.spellcheck-suggest
+	{
+	margin-top: 0.5em;
+}
+
+html.js body div.content div#search.detail-pane div.search-results div.spellcheck-suggest span.badge
+	{
+	margin-right: 1em;
+}
+
+html.js body div.content div#search.detail-pane div.search-results h3.badge
+	{
+	margin-top: 1em;
+	text-align: center;
+}
+
+html.js body div.content div#search.detail-pane div.search-results div.spellcheck-suggest a img
+	{
+	vertical-align: bottom;
+	margin-right: 2px;
+}
+
+html.js body div.content div#search.detail-pane div.search-results h4.ui-state-highlight span.research-suggest-legend img
+	{
+	vertical-align: bottom;
+	margin-left: 2em;
+	margin-right: 0.3em;
+}
+
+/*
+carousel
+*/
+html.js a#ui-carousel-prev:link,html.js a#ui-carousel-prev:visited,html.js a#ui-carousel-prev:hover,html.js a#ui-carousel-prev:active
+	{
+	color: #FF5C43;
+}
+
+html.js #carousel {
+	float: left;
+}
+
+html.js #ui-carousel-next,html.js #ui-carousel-prev {
+	background: url("../img/arrow-left.png") no-repeat scroll center center
+		#FFFFFF;
+	display: block;
+	height: 100px;
+	float: left;
+	top: 0;
+	width: 60px;
+	z-index: 100;
+}
+
+html.js #ui-carousel-next {
+	background-image: url("../img/arrow-right.png");
+	right: 0;
+}
+
+html.js .carousel-container {
+	clear: both;
+	width: 350px;
+	margin: 0 1em;
+}
+
+html.js div#display.detail-pane div.pane div.present-thumb span {
+	display: inline-block;
+	float: left;
+	margin-right: 1.5em;
+	font-size: 20px;
+	font-weight: bold;
+	width: 100px;
+}
+
+html.js body div.content div#display.detail-pane div.pane div.refresh-area h4
+	{
+	margin-left: 1em;
+}
+
+html.js body div.content div#display.detail-pane div.pane div.present-thumb
+	{
+	margin: 1em 1em 2em 1em;
+	padding: 14px;
+	width: 290px;
+	height: 128px;
+	clear: both;
+}
+
+html.js body div.content div#display.detail-pane div.pane div.refresh-area div.present-thumb img
+	{
+	max-width: 128px;
+	max-height: 128px;
+}
+
+html.js body div.content div#display.detail-pane div.pane div.custom-image-input-container
+	{
+	width: 350px;
+	margin: 1em auto 2em 1em;
+	clear: both;
+}
+
+html.js body div.content div.add-metadata div.pane div.add-metadata-input-container form#import-metadata,html.js body div.content div#edit.detail-pane div.pane div.file-input-container form#send_file
+	{
+	cursor: pointer;
+	display: block;
+	overflow: hidden;
+	position: relative;
+	width: 800px;
+}
+
+html.js div#display.detail-pane div.pane div.custom-image-input-container form#set_custom_thumb #image_upload,html.js body div.content div.add-metadata div.pane div.add-metadata-input-container form#import-metadata input#metadata_upload,html.js body div.content div#edit.detail-pane div.pane div.file-input-container form#send_file input#file_upload
+	{
+	cursor: pointer;
+	position: absolute;
+	left: 0;
+	top: 0;
+	filter: alpha(opacity =                                                 1);
+	-moz-opacity: 0.01;
+	opacity: 0.01;
+	z-index: 999;
+	height: 42px;
+	width: 600px;
+	margin-left: -5px;
+	margin-top: -1px;
+	padding: 0.4em 1em;
+}
+
+html.js body div.content div#edit.detail-pane div.pane div.file-input-container form#send_file input#file_upload
+	{
+	width: 200px;
+}
+
+html.js div#display.detail-pane div.pane div.custom-image-input-container div.progress
+	{
+	position: relative;
+	width: 400px;
+	border: 1px solid #ddd;
+	padding: 1px;
+	border-radius: 3px
+}
+
+html.js body div.content div.add-metadata div.pane div.add-metadata-input-container form#import-metadata input#metadata_submit.ui-button
+	{
+	width: 600px;
+	height: 36px;
+}
+
+html.js div#display.detail-pane div.pane div.custom-image-input-container div.progress .bar,html.js body div.content div#edit.detail-pane div.pane div.file-input-container div.bar
+	{
+	background-color: #b4f5b4;
+	width: 0%;
+	height: 20px;
+	border-radius: 3px
+}
+
+html.js div#display.detail-pane div.pane div.custom-image-input-container div.progress .percent
+	{
+	position: absolute;
+	display: inline-block;
+	top: 3px;
+	left: 48%
+}
+
+html.js body div#display.detail-pane div.pane div.refresh-area div.carousel-container div#carousel.disabled-carousel form.choose-thumb
+	{
+	float: left;
+	margin-left: 1em;
+}
+/*
+add metadata
+*/
+html.js body div.content div.add-metadata div.pane div#add-metadata-result
+	{
+	padding: 1em;
+	margin: 1em
+}
+
+html.js body div.content div.add-metadata div.pane div#add-metadata-result div.ui-widget-content
+	{
+	margin-top: 1em;
+	padding: 0.5em;
+}
+
+html.js body div.content div.add-metadata div.pane div#add-metadata-result div.ui-widget-content p.ui-state-highlight
+	{
+	padding: 5px;
+}
+
+html.js body div.content div.add-metadata div.pane div#add-metadata-result div div.ui-widget-content div.content-suggestion-wrapper h3
+	{
+	margin: 0 0 0.5em 0;
+}
+
+html.js body div.content div.add-metadata div.pane div#add-metadata-result div div.ui-widget-content div.content-suggestion-wrapper
+	{
+	padding: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+html.js body div.content div.add-metadata div.pane div#add-metadata-result div div.ui-widget-content div.content-suggestion-wrapper form.register-url input.ui-button
+	{
+	margin: 0.5em auto;
+	width: 100%;
+}
+/*
+refresh
+*/
+html.js body div.content div.add-metadata div.pane h2.ui-state-highlight img
+	{
+	margin: 5px 20px;
+	vertical-align: middle;
+	width: 32px;
+}
+
+html.js body div.content div#refresh.detail-pane div.pane h3.ui-state-highlight
+	{
+	padding: 0.5em;
+	text-align: center;
+	clear: left;
+}
+
+html.js body div.content div.add-metadata div.pane h2 {
+	display: inline-block;
+	padding-right: 20px;
+	margin-top: 0;
+}
+
+html.js body div.content div#refresh.detail-pane div.pane div.refresh-control
+	{
+	margin-left: 0em;
+	margin-top: 1em;
+}
+
+html.js body div.content div#refresh.detail-pane div.pane div.console-area
+	{
+	font-family: Courier;
+	height: 100%;
+	overflow-y: hidden;
+}
+
+html.js body div.content div#refresh.detail-pane div.pane {
+	
+}
+/*
+details
+*/
+html.js details,html.js summary {
+	display: block;
+	padding: 0.5em;
+}
+
+html.js div.content div#uris.detail-pane div.uris-bloc p {
+	padding: 1em;
+}
+
+html.js details,html.js  div.content div#uris.detail-pane div.uris-bloc p
+	{
+	border: 1px solid #666;
+	margin-top: 0.5em;
+}
+/* Apply a pointer cursor and style the background upon hover to indicate <summary> is a clickable element. */
+/* These styles can be applied regardless of whether the fallback is needed */
+html.js summary {
+	cursor: pointer;
+}
+
+html.js summary:hover,html.js summary:focus {
+	
+}
+
+/* The following styles are not really needed, since the jQuery script takes care of hiding/displaying the elements. */
+/* However, we’re still gonna use CSS as well to prevent FOUC in browsers that understand these selectors. */
+/* Remember: by default (and probably most of the time), the contents of the <details> element are hidden. */
+html.js.no-details details>* {
+	display: none;
+}
+/* This doesn’t work very well in Firefox 3.6.x */
+/* .no-details details[open] > * { display: block; } */
+/* The following doesn’t toggle correctly in WebKit:
+			.no-details details > summary:before { content: '► '; }
+			.no-details details[open] > summary:before { content: '▼ '; }
+			*/
+/* And yes, it should really be ::before, but that doesn’t work in IE8 */
+html.js.no-details details>summary:before {
+	float: left;
+	width: 20px;
+	content: '► ';
+}
+
+html.js.no-details details.open>summary:before {
+	content: '▼ ';
+}
+/* For IE6 and IE7, who don’t support generated content, you could use padding-left + a background image instead */
+/* I really couldn’t be bothered though. */
+/*
+			.no-details details > summary { padding-left: 20px; background: url(img/arrow-sprite.png) no-repeat 0 0; }
+			.no-details details.open > summary { background-position: 0 -20px; }
+			*/
+/* Make sure summary remains visible */
+html.js.no-details details summary {
+	display: block;
+}
+/* Pretty printing styles. Used with prettify.js. */
+html.js.no-details body div.content div#uris.detail-pane div.uris-bloc details.open div pre.prettyprint
+	{
+	border: none;
+	margin-top: 0.5em;
+}
+
+/* SPAN elements with the classes below are added by prettyprint. */
+.pln {
+	color: #000
+} /* plain text */
+@media screen {
+	.str {
+		color: #080
+	} /* string content */
+	.kwd {
+		color: #008
+	} /* a keyword */
+	.com {
+		color: #800
+	} /* a comment */
+	.typ {
+		color: #606
+	} /* a type name */
+	.lit {
+		color: #066
+	} /* a literal value */
+	/* punctuation, lisp open bracket, lisp close bracket */
+	.pun,.opn,.clo {
+		color: #660
+	}
+	.tag {
+		color: #008
+	} /* a markup tag name */
+	.atn {
+		color: #606
+	} /* a markup attribute name */
+	.atv {
+		color: #080
+	} /* a markup attribute value */
+	.dec,.var {
+		color: #606
+	} /* a declaration; a variable name */
+	.fun {
+		color: red
+	} /* a function name */
+}
+
+/* Use higher contrast and text-weight for printable form. */
+@media print , projection {
+	.str {
+		color: #060
+	}
+	.kwd {
+		color: #006;
+		font-weight: bold
+	}
+	.com {
+		color: #600;
+		font-style: italic
+	}
+	.typ {
+		color: #404;
+		font-weight: bold
+	}
+	.lit {
+		color: #044
+	}
+	.pun,.opn,.clo {
+		color: #440
+	}
+	.tag {
+		color: #006;
+		font-weight: bold
+	}
+	.atn {
+		color: #404
+	}
+	.atv {
+		color: #060
+	}
+}
+
+/* Put a border around prettyprinted code snippets. */
+pre.prettyprint {
+	padding: 2px;
+	border: 1px solid #888
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+	margin-top: 0;
+	margin-bottom: 0
+} /* IE indents via margin-left */
+li.L0,li.L1,li.L2,li.L3,li.L5,li.L6,li.L7,li.L8 {
+	list-style-type: none
+}
+/* Alternate shading for lines */
+li.L1,li.L3,li.L5,li.L7,li.L9 {
+	background: #eee
+}
+/*
+checkboxes
+*/
+input[type=checkbox].css-checkbox {
+	display: none;
+}
+
+input[type=checkbox].css-checkbox+label.css-label {
+	padding-left: 20px;
+	height: 15px;
+	display: inline-block;
+	line-height: 15px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	font-size: 15px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+input[type=checkbox].css-checkbox:checked+label.css-label {
+	background-position: 0 -15px;
+}
+
+input[type=checkbox].css-checkbox.semi-checked+label.css-label {
+	background-position: 0 -30px;
+}
+
+.css-label {
+	background-image: url(../img/checkbox.png);
+}

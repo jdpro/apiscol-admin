@@ -1,0 +1,32 @@
+RewriteEngine on
+RewriteRule ^query-suggest/([^/]+)$ .?mode=async&autocomplete=true&query=$1 [L]
+RewriteRule ^resources/detail/([^/]+)/search$ .?page=resources&action=detail&panel=search&metadata-id=$1 [L,QSA]
+
+RewriteRule ^resources/detail/[^/]+/refresh/refresh-process-report/([a-z.0-9/:_-]+)/async$ .?page=resources&action=detail&panel=refresh&refresh-process-report=$1&mode=async [L]
+RewriteRule ^resources/detail/([^/]+)/display/display-mode/([^/]+)$ .?page=resources&action=detail&panel=display&metadata-id=$1&display-mode=$2 [L]
+RewriteRule ^resources/detail/([^/]+)/display/display-device/([^/]+)$ .?page=resources&action=detail&panel=display&metadata-id=$1&display-device=$2 [L]
+RewriteRule ^resources/detail/([^/]+)/file-list/async$ .?page=resources&action=detail&metadata-id=$1&panel=edit&file-list=file-list&mode=async [L]
+RewriteRule ^resources/detail/[^/]+/edit/url-parsing-report/([a-z.0-9/:_-]+)/async$ .?page=resources&action=detail&panel=edit&url-parsing-report=$1&mode=async [L]
+RewriteRule ^add/metadata/url-parsing-report/([a-z.0-9/:_-]+)/async$ .?page=add&action=metadata&url-parsing-report=$1&mode=async [L]
+RewriteRule ^resources/detail/[^/]+/edit/file-transfer-report/([a-z.0-9/:_-]+)/async$ .?page=resources&action=detail&panel=edit&file-transfer-report=$1&mode=async [L]
+RewriteRule ^resources/detail/([^/]+)/([^/]+)/async$ .?page=resources&action=detail&metadata-id=$1&panel=$2&mode=async [L]
+RewriteRule ^resources/detail/([^/]+)/([^/]+)$ .?page=resources&action=detail&metadata-id=$1&panel=$2 [L]
+RewriteRule ^resources/list/start/(\d+)/rows/(\d+)$ .?page=resources&action=list&start=$1&rows=$2 [L]
+RewriteRule ^resources/list/start/(\d+)/rows/(\d+)/active-tab/\[([^\]]+)\]/west-pane/(\d+)/north-pane/(\d+)/south-pane/(\d+)/query/([^/]+)$ .?page=resources&action=list&start=$1&rows=$2&active-tab=$3&west-pane=$4&north-pane=$5&south-pane=$6&query=$7 [L]
+RewriteRule ^resources/list/clear-filters/\[([^\]]+)\]$ .?page=resources&action=list&clear-filters=$1 [L]
+RewriteRule ^resources/list/clear-filters/\[([^\]]+)\]/start/(\d+)/rows/(\d+)/active-tab/\[([^\]]+)\]/west-pane/(\d+)/north-pane/(\d+)/south-pane/(\d+)/query/([^/]+)$ .?page=resources&action=list&clear-filters=$1&start=$2&rows=$3&active-tab=$4&west-pane=$5&north-pane=$6&south-pane=$7&query=$8 [L]
+RewriteRule ^resources/list/dynamic-filter/\[([^\]]+)\]/start/(\d+)/rows/(\d+)/active-tab/\[([^\]]+)\]/west-pane/(\d+)/north-pane/(\d+)/south-pane/(\d+)/query/([^/]+)$ .?page=resources&action=list&dynamic-filters=$1&start=$2&rows=$3&active-tab=$4&west-pane=$5&north-pane=$6&south-pane=$7&query=$8 [L]
+RewriteRule ^resources/list/dynamic-filter/\[([^\]]+)\]$ .?page=resources&action=list&dynamic-filters=$1 [L]
+RewriteRule ^resources/list/static-filter/\[([^\]]+)\]$ .?page=resources&action=list&static-filters=$1 [L]
+RewriteRule ^resources/list/static-filter/\[([^\]]+)\]/start/(\d+)/rows/(\d+)/active-tab/\[([^\]]+)\]/west-pane/(\d+)/north-pane/(\d+)/south-pane/(\d+)/query/([^/]+)$ .?page=resources&action=list&static-filters=$1&start=$2&rows=$3&active-tab=$4&west-pane=$5&north-pane=$6&south-pane=$7&query=$8 [L]
+RewriteCond %{QUERY_STRING}     ^$              [NC]
+RewriteRule ^([\w]+)/([\w]+)/async$ .?page=$1&action=$2&mode=async [L]
+RewriteRule ^warning .?page=home&warning=warning [L]
+RewriteRule ^([\w]+)/([\w]+)$ .?page=$1&action=$2 [L]
+RewriteRule ^resources .?page=resources&action=list
+RewriteRule ^add .?page=add&action=metadata
+RewriteRule ^([\w]+)$ .?page=$1 
+RewriteCond %{QUERY_STRING}     ^$              [OR]
+RewriteCond %{QUERY_STRING}     ^query=(.*)$    [NC]
+RewriteRule ^([\w]+)/([\w]+)$ .?page=resources&action=list&query=%1 [L]
+#RewriteRule ^.* ?page=home&warning=warning [L]

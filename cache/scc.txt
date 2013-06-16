@@ -1,0 +1,213 @@
+[ {
+							"title" : "Compétences",
+							"isFolder" : true,
+							"hideCheckbox" : true,
+							"children" : [
+									{
+										"title" : "compétence 1 - la maîtrise de la langue française",
+										"key" : "scolomfr-voc-016-num-001",
+										"icon" : false,
+										"children" : [ {
+											"title" : "écrire",
+											"key" : "scolomfr-voc-016-num-0012",
+											"icon" : false,
+											"children" : []
+										}, {
+											"title" : "lire",
+											"key" : "scolomfr-voc-016-num-0011",
+											"icon" : false,
+											"children" : []
+										}, {
+											"title" : "s'exprimer à l'oral",
+											"key" : "scolomfr-voc-016-num-0013",
+											"icon" : false,
+											"children" : []
+										}, {
+											"title" : "utiliser des outils",
+											"key" : "scolomfr-voc-016-num-0014",
+											"icon" : false,
+											"children" : []
+										} ]
+									},
+									{
+										"title" : "compétence 2 - la pratique d'une langue vivante étrangère (niveau a2)",
+										"key" : "scolomfr-voc-016-num-002",
+										"icon" : false,
+										"children" : [ {
+											"title" : "écouter et comprendre",
+											"key" : "scolomfr-voc-016-num-0022",
+											"icon" : false,
+											"children" : []
+										}, {
+											"title" : "écrire",
+											"key" : "scolomfr-voc-016-num-0025",
+											"icon" : false,
+											"children" : []
+										}, {
+											"title" : "lire",
+											"key" : "scolomfr-voc-016-num-0024",
+											"icon" : false,
+											"children" : []
+										}, {
+											"title" : "parler en continu",
+											"key" : "scolomfr-voc-016-num-0023",
+											"icon" : false,
+											"children" : []
+										}, {
+											"title" : "réagir et dialoguer",
+											"key" : "scolomfr-voc-016-num-0021",
+											"icon" : false,
+											"children" : []
+										} ]
+									},
+									{
+										"title" : "compétence 3 - les principaux éléments de mathématiques et la culture scientifique et technologique",
+										"key" : "scolomfr-voc-016-num-003",
+										"icon" : false,
+										"children" : [
+												{
+													"title" : "mobiliser ses connaissances pour comprendre des questions liées à l'environnement et au développement durable",
+													"key" : "scolomfr-voc-016-num-0034",
+													"icon" : false,
+													"children" : []
+												},
+												{
+													"title" : "pratiquer une démarche scientifique et technologique, résoudre des problèmes",
+													"key" : "scolomfr-voc-016-num-0031",
+													"icon" : false,
+													"children" : []
+												},
+												{
+													"title" : "savoir utiliser des connaissances dans divers domaines scientifiques",
+													"key" : "scolomfr-voc-016-num-0033",
+													"icon" : false,
+													"children" : []
+												},
+												{
+													"title" : "savoir utiliser des connaissances et des compétences mathématiques",
+													"key" : "scolomfr-voc-016-num-0032",
+													"icon" : false,
+													"children" : []
+												} ]
+									},
+									{
+										"title" : "compétence 4 - la maîtrise des techniques usuelles de l'information et de la communication (b2i)",
+										"key" : "scolomfr-voc-016-num-004",
+										"icon" : false,
+										"children" : [
+												{
+													"title" : "domaine 1 - s'approprier un environnement informatique de travail",
+													"key" : "scolomfr-voc-016-num-0041",
+													"icon" : false,
+													"children" : []
+												},
+												{
+													"title" : "domaine 2 - adopter une attitude responsable",
+													"key" : "scolomfr-voc-016-num-0042",
+													"icon" : false,
+													"children" : []
+												},
+												{
+													"title" : "domaine 3 - créer, produire, traiter, exploiter des données",
+													"key" : "scolomfr-voc-016-num-0043",
+													"icon" : false,
+													"children" : []
+												},
+												{
+													"title" : "domaine 4 - s'informer, se documenter",
+													"key" : "scolomfr-voc-016-num-0044",
+													"icon" : false,
+													"children" : []
+												},
+												{
+													"title" : "domaine 5 - communiquer, échanger",
+													"key" : "scolomfr-voc-016-num-0045",
+													"icon" : false,
+													"children" : []
+												} ]
+									},
+									{
+										"title" : "compétence 5 - la culture humaniste",
+										"key" : "scolomfr-voc-016-num-005",
+										"icon" : false,
+										"children" : [
+												{
+													"title" : "avoir des outils pour comprendre l'unité et la complexité du monde",
+													"key" : "scolomfr-voc-016-num-0056",
+													"icon" : false,
+													"children" : []
+												},
+												{
+													"title" : "avoir des repères en histoire des arts et pratiquer les arts",
+													"key" : "scolomfr-voc-016-num-0054",
+													"icon" : false,
+													"children" : []
+												},
+												{
+													"title" : "avoir des repères géographiques",
+													"key" : "scolomfr-voc-016-num-0051",
+													"icon" : false,
+													"children" : []
+												},
+												{
+													"title" : "avoir des repères historiques",
+													"key" : "scolomfr-voc-016-num-0052",
+													"icon" : false,
+													"children" : []
+												},
+												{
+													"title" : "avoir des repères littéraires",
+													"key" : "scolomfr-voc-016-num-0053",
+													"icon" : false,
+													"children" : []
+												},
+												{
+													"title" : "lire et utiliser différents langages",
+													"key" : "scolomfr-voc-016-num-0055",
+													"icon" : false,
+													"children" : []
+												} ]
+									},
+									{
+										"title" : "compétence 6 - les compétences sociales et civiques",
+										"key" : "scolomfr-voc-016-num-006",
+										"icon" : false,
+										"children" : [
+												{
+													"title" : "avoir un comportement responsable",
+													"key" : "scolomfr-voc-016-num-0062",
+													"icon" : false,
+													"children" : []
+												},
+												{
+													"title" : "connaître les principes et fondements de la vie civique et sociale",
+													"key" : "scolomfr-voc-016-num-0061",
+													"icon" : false,
+													"children" : []
+												} ]
+									},
+									{
+										"title" : "compétence 7 - l'autonomie et l'initiative",
+										"key" : "scolomfr-voc-016-num-007",
+										"icon" : false,
+										"children" : [
+												{
+													"title" : "découvrir les métiers et les formations",
+													"key" : "scolomfr-voc-016-num-0071",
+													"icon" : false,
+													"children" : []
+												},
+												{
+													"title" : "être capable de mobiliser ses ressources intellectuelles et physiques dans diverses situations",
+													"key" : "scolomfr-voc-016-num-00712",
+													"icon" : false,
+													"children" : []
+												},
+												{
+													"title" : "faire preuve d'initiative",
+													"key" : "scolomfr-voc-016-num-00713",
+													"icon" : false,
+													"children" : []
+												} ]
+									} ]
+						} ]

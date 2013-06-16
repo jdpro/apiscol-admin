@@ -1,0 +1,48 @@
+<div id="display" class="detail-pane">
+
+	<div class="pane ui-layout-center">
+		<div class="pane-header-wrapper">
+			<h2 class="ui-state-highlight">
+				<img src="[PREFIX]/img/eye.png" />Portlet d'affichage
+			</h2>
+			<div class="display-options">
+				<button id="change-display-mode">Mode [DISPLAY-MODE-LABEL]</button>
+				<ul id="display-mode">
+					<li class="ui-widget ui-widget-content ui-corner-all"><a
+						href="[PREFIX]/resources/detail/[MDID]/display/display-mode/full"
+						data-mode="full"> Mode normal</a></li>
+					<li class="ui-widget ui-widget-content ui-corner-all"><a
+						href="[PREFIX]/resources/detail/[MDID]/display/display-mode/base"
+						data-mode="base"> Mode mini</a></li>
+				</ul>
+				<button id="change-display-device">Terminal :
+					[DISPLAY-DEVICE-LABEL]</button>
+				<ul id="display-device">
+					<li class="ui-widget ui-widget-content ui-corner-all"><a
+						href="[PREFIX]/resources/detail/[MDID]/display/display-device/screen"
+						data-device="screen"> Terminal : moniteur</a></li>
+					<!-- 			<li class="ui-widget ui-widget-content ui-corner-all"><a
+				href="[PREFIX]/resources/detail/[MDID]/display-device/mobile"
+				data-device="mobile"> Terminal : mobile</a></li>
+			<li class="ui-widget ui-widget-content ui-corner-all"><a
+				href="[PREFIX]/resources/detail/[MDID]/display-device/auto"
+				data-device="auto"> Terminal : auto</a></li> -->
+				</ul>
+			</div>
+		</div>
+		<div class="display-wrapper">[DISPLAY]</div>
+	</div>
+	<div class="pane ui-layout-west">
+
+		<h2 class="ui-state-highlight">
+			<img src="[PREFIX]/img/img.png" />Choisir une miniature
+		</h2>
+		<div class="refresh-area">[THUMBS][CUSTOM-THUMBS]</div>
+		<div class="pane ui-layout-south">
+			<h2 class="ui-state-error">
+				<img src="[PREFIX]/img/delete.png" />Détruire la ressource
+			</h2>
+			[DELETE]
+		</div>
+	</div>
+</div>

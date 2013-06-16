@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT language (xmldata*) >	
+	<!ELEMENT xmldata (translation+) >
+	<!ATTLIST xmldata id ID #REQUIRED >
+		<!ELEMENT translation (#PCDATA) >
+		<!ATTLIST translation lang CDATA #REQUIRED >

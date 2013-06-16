@@ -1,0 +1,484 @@
+	[ {
+							"title" : "Niveaux",
+							"isFolder" : true,
+							"hideCheckbox" : true,
+							"children" : [
+									{
+										"title" : "BTS brevet de technicien supérieur",
+										"key" : "scolomfr-voc-022-num-059",
+										"icon" : false,
+										"children" : [ {
+											"title" : "BTS - 1ère année",
+											"key" : "scolomfr-voc-022-num-074",
+											"icon" : false,
+											"children" : []
+										}, {
+											"title" : "BTS - 2ème année",
+											"key" : "scolomfr-voc-022-num-075",
+											"icon" : false,
+											"children" : []
+										} ]
+									},
+									{
+										"title" : "collège",
+										"key" : "scolomfr-voc-022-num-016",
+										"icon" : false,
+										"children" : [ {
+											"title" : "3e",
+											"key" : "scolomfr-voc-022-num-023",
+											"icon" : false,
+											"children" : []
+										}, {
+											"title" : "4e",
+											"key" : "scolomfr-voc-022-num-021",
+											"icon" : false,
+											"children" : []
+										}, {
+											"title" : "5e",
+											"key" : "scolomfr-voc-022-num-020",
+											"icon" : false,
+											"children" : []
+										}, {
+											"title" : "6e",
+											"key" : "scolomfr-voc-022-num-018",
+											"icon" : false,
+											"children" : []
+										} ]
+									},
+									{
+										"title" : "CPGE classe préparatoire aux grandes écoles",
+										"key" : "scolomfr-voc-022-num-058",
+										"icon" : false,
+										"children" : [ {
+											"title" : "CPGE - 1ère année",
+											"key" : "scolomfr-voc-022-num-078",
+											"icon" : false,
+											"children" : []
+										}, {
+											"title" : "CPGE - 2ème année",
+											"key" : "scolomfr-voc-022-num-079",
+											"icon" : false,
+											"children" : []
+										} ]
+									},
+									{
+										"title" : "cycles de l'enseignement scolaire",
+										"key" : "scolomfr-voc-022-num-094",
+										"icon" : false,
+										"children" : [ {
+											"title" : "classe de détermination",
+											"key" : "scolomfr-voc-022-num-084",
+											"icon" : false,
+											"children" : []
+										}, {
+											"title" : "cycle 2",
+											"key" : "scolomfr-voc-022-num-009",
+											"icon" : false,
+											"children" : []
+										}, {
+											"title" : "cycle 3",
+											"key" : "scolomfr-voc-022-num-012",
+											"icon" : false,
+											"children" : []
+										}, {
+											"title" : "cycle central",
+											"key" : "scolomfr-voc-022-num-019",
+											"icon" : false,
+											"children" : []
+										}, {
+											"title" : "cycle d'adaptation",
+											"key" : "scolomfr-voc-022-num-017",
+											"icon" : false,
+											"children" : []
+										}, {
+											"title" : "cycle d'orientation",
+											"key" : "scolomfr-voc-022-num-022",
+											"icon" : false,
+											"children" : []
+										}, {
+											"title" : "cycle terminal",
+											"key" : "scolomfr-voc-022-num-085",
+											"icon" : false,
+											"children" : []
+										} ]
+									},
+									{
+										"title" : "DUT diplôme universitaire de technologie",
+										"key" : "scolomfr-voc-022-num-060",
+										"icon" : false,
+										"children" : [ {
+											"title" : "DUT - 1ère année",
+											"key" : "scolomfr-voc-022-num-080",
+											"icon" : false,
+											"children" : []
+										}, {
+											"title" : "DUT - 2ème année",
+											"key" : "scolomfr-voc-022-num-081",
+											"icon" : false,
+											"children" : []
+										} ]
+									},
+									{
+										"title" : "école élémentaire",
+										"key" : "scolomfr-voc-022-num-008",
+										"icon" : false,
+										"children" : [ {
+											"title" : "CE1",
+											"key" : "scolomfr-voc-022-num-011",
+											"icon" : false,
+											"children" : []
+										}, {
+											"title" : "CE2",
+											"key" : "scolomfr-voc-022-num-013",
+											"icon" : false,
+											"children" : []
+										}, {
+											"title" : "CM1",
+											"key" : "scolomfr-voc-022-num-014",
+											"icon" : false,
+											"children" : []
+										}, {
+											"title" : "CM2",
+											"key" : "scolomfr-voc-022-num-015",
+											"icon" : false,
+											"children" : []
+										}, {
+											"title" : "CP",
+											"key" : "scolomfr-voc-022-num-010",
+											"icon" : false,
+											"children" : []
+										} ]
+									},
+									{
+										"title" : "école maternelle",
+										"key" : "scolomfr-voc-022-num-002",
+										"icon" : false,
+										"children" : [ {
+											"title" : "grande section",
+											"key" : "scolomfr-voc-022-num-007",
+											"icon" : false,
+											"children" : []
+										}, {
+											"title" : "moyenne section",
+											"key" : "scolomfr-voc-022-num-006",
+											"icon" : false,
+											"children" : []
+										}, {
+											"title" : "petite section",
+											"key" : "scolomfr-voc-022-num-005",
+											"icon" : false,
+											"children" : []
+										}, {
+											"title" : "toute petite section",
+											"key" : "scolomfr-voc-022-num-004",
+											"icon" : false,
+											"children" : []
+										} ]
+									},
+									{
+										"title" : "enseignement professionnel - mention complémentaire",
+										"key" : "scolomfr-voc-022-num-061",
+										"icon" : false,
+										"children" : []
+									},
+									{
+										"title" : "formation continue des personnels de l'éducation",
+										"key" : "scolomfr-voc-022-num-063",
+										"icon" : false,
+										"children" : []
+									},
+									{
+										"title" : "formation professionnelle des personnels de l'éducation",
+										"key" : "scolomfr-voc-022-num-062",
+										"icon" : false,
+										"children" : []
+									},
+									{
+										"title" : "lycée",
+										"key" : "scolomfr-voc-022-num-024",
+										"icon" : false,
+										"children" : [
+												{
+													"title" : "BMA brevet des métiers d'art",
+													"key" : "scolomfr-voc-022-num-051",
+													"icon" : false,
+													"children" : [
+															{
+																"title" : "BMA - 1ère année",
+																"key" : "scolomfr-voc-022-num-068",
+																"icon" : false,
+																"children" : []
+															},
+															{
+																"title" : "BMA - 2ème année",
+																"key" : "scolomfr-voc-022-num-069",
+																"icon" : false,
+																"children" : []
+															} ]
+												},
+												{
+													"title" : "BP brevet professionnel",
+													"key" : "scolomfr-voc-022-num-052",
+													"icon" : false,
+													"children" : [
+															{
+																"title" : "BP - 1ère année",
+																"key" : "scolomfr-voc-022-num-070",
+																"icon" : false,
+																"children" : []
+															},
+															{
+																"title" : "BP - 2ème année",
+																"key" : "scolomfr-voc-022-num-071",
+																"icon" : false,
+																"children" : []
+															} ]
+												},
+												{
+													"title" : "BTM brevet technique des métiers",
+													"key" : "scolomfr-voc-022-num-053",
+													"icon" : false,
+													"children" : [
+															{
+																"title" : "BTM - 1ère année",
+																"key" : "scolomfr-voc-022-num-072",
+																"icon" : false,
+																"children" : []
+															},
+															{
+																"title" : "BTM - 2ème année",
+																"key" : "scolomfr-voc-022-num-073",
+																"icon" : false,
+																"children" : []
+															} ]
+												},
+												{
+													"title" : "CAP - certificat d'aptitude professionnelle",
+													"key" : "scolomfr-voc-022-num-054",
+													"icon" : false,
+													"children" : [
+															{
+																"title" : "CAP - 1ère année",
+																"key" : "scolomfr-voc-022-num-076",
+																"icon" : false,
+																"children" : []
+															},
+															{
+																"title" : "CAP - 2ème année",
+																"key" : "scolomfr-voc-022-num-077",
+																"icon" : false,
+																"children" : []
+															} ]
+												},
+												{
+													"title" : "FCIL formation complémentaire d'initiative locale",
+													"key" : "scolomfr-voc-022-num-055",
+													"icon" : false,
+													"children" : []
+												},
+												{
+													"title" : "MC mention complémentaire",
+													"key" : "scolomfr-voc-022-num-056",
+													"icon" : false,
+													"children" : []
+												},
+												{
+													"title" : "voie générale et technologique",
+													"key" : "scolomfr-voc-022-num-066",
+													"icon" : false,
+													"children" : [
+															{
+																"title" : "1ère générale et technologique",
+																"key" : "scolomfr-voc-022-num-091",
+																"icon" : false,
+																"children" : [
+																		{
+																			"title" : "1ère ES",
+																			"key" : "scolomfr-voc-022-num-029",
+																			"icon" : false,
+																			"children" : []
+																		},
+																		{
+																			"title" : "1ère L",
+																			"key" : "scolomfr-voc-022-num-030",
+																			"icon" : false,
+																			"children" : []
+																		},
+																		{
+																			"title" : "1ère S",
+																			"key" : "scolomfr-voc-022-num-031",
+																			"icon" : false,
+																			"children" : []
+																		},
+																		{
+																			"title" : "1ère ST2S",
+																			"key" : "scolomfr-voc-022-num-032",
+																			"icon" : false,
+																			"children" : []
+																		},
+																		{
+																			"title" : "1ère STD2A",
+																			"key" : "scolomfr-voc-022-num-033",
+																			"icon" : false,
+																			"children" : []
+																		},
+																		{
+																			"title" : "1ère STG",
+																			"key" : "scolomfr-voc-022-num-034",
+																			"icon" : false,
+																			"children" : []
+																		},
+																		{
+																			"title" : "1ère STI2D",
+																			"key" : "scolomfr-voc-022-num-035",
+																			"icon" : false,
+																			"children" : []
+																		},
+																		{
+																			"title" : "1ère STL",
+																			"key" : "scolomfr-voc-022-num-036",
+																			"icon" : false,
+																			"children" : []
+																		},
+																		{
+																			"title" : "1ère STMG",
+																			"key" : "scolomfr-voc-022-num-082",
+																			"icon" : false,
+																			"children" : []
+																		},
+																		{
+																			"title" : "1ère techno hôtellerie",
+																			"key" : "scolomfr-voc-022-num-037",
+																			"icon" : false,
+																			"children" : []
+																		} ]
+															},
+															{
+																"title" : "2de générale",
+																"key" : "scolomfr-voc-022-num-026",
+																"icon" : false,
+																"children" : []
+															},
+															{
+																"title" : "terminale générale et technologique",
+																"key" : "scolomfr-voc-022-num-088",
+																"icon" : false,
+																"children" : [
+																		{
+																			"title" : "terminale ES",
+																			"key" : "scolomfr-voc-022-num-040",
+																			"icon" : false,
+																			"children" : []
+																		},
+																		{
+																			"title" : "terminale L",
+																			"key" : "scolomfr-voc-022-num-041",
+																			"icon" : false,
+																			"children" : []
+																		},
+																		{
+																			"title" : "terminale S",
+																			"key" : "scolomfr-voc-022-num-042",
+																			"icon" : false,
+																			"children" : []
+																		},
+																		{
+																			"title" : "terminale ST2S",
+																			"key" : "scolomfr-voc-022-num-043",
+																			"icon" : false,
+																			"children" : []
+																		},
+																		{
+																			"title" : "terminale STD2A",
+																			"key" : "scolomfr-voc-022-num-044",
+																			"icon" : false,
+																			"children" : []
+																		},
+																		{
+																			"title" : "terminale STG",
+																			"key" : "scolomfr-voc-022-num-045",
+																			"icon" : false,
+																			"children" : []
+																		},
+																		{
+																			"title" : "terminale STI",
+																			"key" : "scolomfr-voc-022-num-046",
+																			"icon" : false,
+																			"children" : []
+																		},
+																		{
+																			"title" : "terminale STI2D",
+																			"key" : "scolomfr-voc-022-num-047",
+																			"icon" : false,
+																			"children" : []
+																		},
+																		{
+																			"title" : "terminale STL",
+																			"key" : "scolomfr-voc-022-num-048",
+																			"icon" : false,
+																			"children" : []
+																		},
+																		{
+																			"title" : "terminale STMG",
+																			"key" : "scolomfr-voc-022-num-083",
+																			"icon" : false,
+																			"children" : []
+																		},
+																		{
+																			"title" : "terminale techno hôtellerie",
+																			"key" : "scolomfr-voc-022-num-049",
+																			"icon" : false,
+																			"children" : []
+																		} ]
+															} ]
+												},
+												{
+													"title" : "voie professionnelle",
+													"key" : "scolomfr-voc-022-num-065",
+													"icon" : false,
+													"children" : [
+															{
+																"title" : "1ère professionnelle",
+																"key" : "scolomfr-voc-022-num-038",
+																"icon" : false,
+																"children" : [
+																		{
+																			"title" : "1ère pro domaine de la production",
+																			"key" : "scolomfr-voc-022-num-092",
+																			"icon" : false,
+																			"children" : []
+																		},
+																		{
+																			"title" : "1ère pro domaine des services",
+																			"key" : "scolomfr-voc-022-num-093",
+																			"icon" : false,
+																			"children" : []
+																		} ]
+															},
+															{
+																"title" : "2de professionnelle",
+																"key" : "scolomfr-voc-022-num-027",
+																"icon" : false,
+																"children" : []
+															},
+															{
+																"title" : "terminale professionnelle",
+																"key" : "scolomfr-voc-022-num-050",
+																"icon" : false,
+																"children" : [
+																		{
+																			"title" : "terminale pro domaine de la production",
+																			"key" : "scolomfr-voc-022-num-089",
+																			"icon" : false,
+																			"children" : []
+																		},
+																		{
+																			"title" : "terminale pro domaine des services",
+																			"key" : "scolomfr-voc-022-num-090",
+																			"icon" : false,
+																			"children" : []
+																		} ]
+															} ]
+												} ]
+									} ]
+						} ]

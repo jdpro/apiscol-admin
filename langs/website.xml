@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE language SYSTEM "xmldoctype.dtd">
+<language>
+	<xmldata id="TITRE-GENERAL">
+		<translation lang="fr">ApiScol - La banque de ressources
+			numériques scolaires </translation>
+		<translation lang="en-gb">ApiScol - The k12 learning object
+			repository </translation>
+	</xmldata>
+	<xmldata id="HOME">
+		<translation lang="fr">Accueil</translation>
+		<translation lang="en-gb">Home</translation>
+	</xmldata>
+	<xmldata id="RESOURCES">
+		<translation lang="fr">Ressources</translation>
+		<translation lang="en-gb">Resources</translation>
+	</xmldata>
+	<xmldata id="ADD">
+		<translation lang="fr">Ajout</translation>
+		<translation lang="en-gb">Add</translation>
+	</xmldata>
+	<xmldata id="ALERTS">
+		<translation lang="fr">Alertes</translation>
+		<translation lang="en-gb">Alerts</translation>
+	</xmldata>
+	<xmldata id="SERVICES">
+		<translation lang="fr">Services</translation>
+		<translation lang="en-gb">Services</translation>
+	</xmldata>
+	<xmldata id="PREFERENCES">
+		<translation lang="fr">Preferences</translation>
+		<translation lang="en-gb">Settings</translation>
+	</xmldata>
+	<xmldata id="UTILISATEURS">
+		<translation lang="fr">Utilisateurs</translation>
+		<translation lang="en-gb">Users</translation>
+	</xmldata>
+	<xmldata id="STATISTIQUES">
+		<translation lang="fr">Statistiques</translation>
+		<translation lang="en-gb">Statistiques</translation>
+	</xmldata>
+	<xmldata id="RESOURCES-MENU-LIST">
+		<translation lang="fr">Liste</translation>
+		<translation lang="en-gb">List</translation>
+	</xmldata>
+	<xmldata id="RESOURCES-MENU-FOLDER">
+		<translation lang="fr">Dossiers</translation>
+		<translation lang="en-gb">Folders</translation>
+	</xmldata>
+	<xmldata id="RESOURCES-FOLDERS">
+		<translation lang="fr">Dossiers</translation>
+		<translation lang="en-gb">Folders</translation>
+	</xmldata>
+	<xmldata id="ADD-MENU-NEW">
+		<translation lang="fr">Nouveau</translation>
+		<translation lang="en-gb">New</translation>
+	</xmldata>
+	<xmldata id="ADD-MENU-IMPORT">
+		<translation lang="fr">Import</translation>
+		<translation lang="en-gb">Import</translation>
+	</xmldata>
+	<xmldata id="RESOURCES-LIST-FILTERS">
+		<translation lang="fr">Liste</translation>
+		<translation lang="en-gb">Liste</translation>
+	</xmldata>
+	<xmldata id="RESOURCES-LIST-RESULTS-PER-PAGE">
+		<translation lang="fr">résultats par page</translation>
+		<translation lang="en-gb">résultats par page</translation>
+	</xmldata>
+	<xmldata id="RESOURCES-LIST-RESULTS">
+		<translation lang="fr">résultats</translation>
+		<translation lang="en-gb">résultats</translation>
+	</xmldata>
+	<xmldata id="RESOURCES-LIST-TITLE">
+		<translation lang="fr">Titre de la ressource</translation>
+		<translation lang="en-gb">Titre de la ressource</translation>
+	</xmldata>
+	<xmldata id="RESOURCES-LIST-RESEARCH">
+		<translation lang="fr">Recherche</translation>
+		<translation lang="en-gb">Recherche</translation>
+	</xmldata>
+	<xmldata id="ERROR-IMPOSSIBLE-CONNECT-META">
+		<translation lang="fr">Impossible de se connecter au service
+			ApiScol Meta pour obtenir la liste des ressources</translation>
+		<translation lang="en-gb">Impossible de se connecter au service
+			ApiScol Meta pour obtenir la liste des ressources</translation>
+	</xmldata>
+	<xmldata id="SUPPRESS-ALL-FILTERS">
+		<translation lang="fr">Supprimer tous les filtres</translation>
+		<translation lang="en-gb">Supprimer tous les filtres</translation>
+	</xmldata>
+	<xmldata id="SUPPRESS-THIS-FILTER">
+		<translation lang="fr">Supprimer ce filtre</translation>
+		<translation lang="en-gb">Supprimer ce filtre</translation>
+	</xmldata>
+	<xmldata id="RIGHTS-IMPOSSIBLE-BROWSE-RESOURCES">
+		<translation lang="fr">Vos droits ne vous permettent pas de
+			consulter les ressources.</translation>
+		<translation lang="en-gb">Vos droits ne vous permettent pas de
+			consulter les ressources.</translation>
+	</xmldata>
+	<xmldata id="CONNEXION">
+		<translation lang="fr">Connexion</translation>
+		<translation lang="en-gb">Connection</translation>
+	</xmldata>
+	<xmldata id="PASSWORD">
+		<translation lang="fr">Mot de passe</translation>
+		<translation lang="en-gb">Mot de passe</translation>
+	</xmldata>
+	<xmldata id="SUBMIT">
+		<translation lang="fr">Soumettre</translation>
+		<translation lang="en-gb">Soumettre</translation>
+	</xmldata>
+	<xmldata id="DISCONNECT">
+		<translation lang="fr">déconnection</translation>
+		<translation lang="en-gb">déconnection</translation>
+	</xmldata>
+	<xmldata id="SEARCH-TEST-REQUEST">
+		<translation lang="fr">Requête</translation>
+		<translation lang="en-gb">Requête</translation>
+	</xmldata>
+	<xmldata id="SEARCH-TEST-SUBMIT">
+		<translation lang="fr">Tester la requête</translation>
+		<translation lang="en-gb">Tester la requête</translation>
+	</xmldata>
+	<xmldata id="xy">
+		<translation lang="fr">Package</translation>
+		<translation lang="en-gb"></translation>
+	</xmldata>
+	<xmldata id="xy1">
+		<translation lang="fr">Package</translation>
+		<translation lang="en-gb"></translation>
+	</xmldata>
+	<xmldata id="xy2">
+		<translation lang="fr">Package</translation>
+		<translation lang="en-gb"></translation>
+	</xmldata>
+	<xmldata id="xy3">
+		<translation lang="fr">Package</translation>
+		<translation lang="en-gb"></translation>
+	</xmldata>
+	<xmldata id="xy4">
+		<translation lang="fr">Package</translation>
+		<translation lang="en-gb"></translation>
+	</xmldata>
+	<xmldata id="xy5">
+		<translation lang="fr">Package</translation>
+		<translation lang="en-gb"></translation>
+	</xmldata>
+	<xmldata id="xy6">
+		<translation lang="fr">Package</translation>
+		<translation lang="en-gb"></translation>
+	</xmldata>
+	<xmldata id="xy7">
+		<translation lang="fr">Package</translation>
+		<translation lang="en-gb"></translation>
+	</xmldata>
+	<xmldata id="xy8">
+		<translation lang="fr">Package</translation>
+		<translation lang="en-gb"></translation>
+	</xmldata>
+	<xmldata id="xy9">
+		<translation lang="fr">Package</translation>
+		<translation lang="en-gb"></translation>
+	</xmldata>
+	<xmldata id="xy10">
+		<translation lang="fr">Package</translation>
+		<translation lang="en-gb"></translation>
+	</xmldata>
+	<xmldata id="xy11">
+		<translation lang="fr">Package</translation>
+		<translation lang="en-gb"></translation>
+	</xmldata>
+	<xmldata id="xy12">
+		<translation lang="fr">Package</translation>
+		<translation lang="en-gb"></translation>
+	</xmldata>
+	<xmldata id="yy">
+		<translation lang="fr">Package</translation>
+		<translation lang="en-gb"></translation>
+	</xmldata>
+	<xmldata id="yy1">
+		<translation lang="fr">Package</translation>
+		<translation lang="en-gb"></translation>
+	</xmldata>
+	<xmldata id="yy2">
+		<translation lang="fr">Package</translation>
+		<translation lang="en-gb"></translation>
+	</xmldata>
+	<xmldata id="yy3">
+		<translation lang="fr">Package</translation>
+		<translation lang="en-gb"></translation>
+	</xmldata>
+	<xmldata id="yy4">
+		<translation lang="fr">Package</translation>
+		<translation lang="en-gb"></translation>
+	</xmldata>
+	<xmldata id="yy5">
+		<translation lang="fr">Package</translation>
+		<translation lang="en-gb"></translation>
+	</xmldata>
+	<xmldata id="yy6">
+		<translation lang="fr">Package</translation>
+		<translation lang="en-gb"></translation>
+	</xmldata>
+	<xmldata id="yy7">
+		<translation lang="fr">Package</translation>
+		<translation lang="en-gb"></translation>
+	</xmldata>
+	<xmldata id="yy8">
+		<translation lang="fr">Package</translation>
+		<translation lang="en-gb"></translation>
+	</xmldata>
+	<xmldata id="yy9">
+		<translation lang="fr">Package</translation>
+		<translation lang="en-gb"></translation>
+	</xmldata>
+	<xmldata id="yy10">
+		<translation lang="fr">Package</translation>
+		<translation lang="en-gb"></translation>
+	</xmldata>
+	<xmldata id="yy11">
+		<translation lang="fr">Package</translation>
+		<translation lang="en-gb"></translation>
+	</xmldata>
+	<xmldata id="yy12">
+		<translation lang="fr">Package</translation>
+		<translation lang="en-gb"></translation>
+	</xmldata>
+</language>
