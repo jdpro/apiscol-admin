@@ -1,4 +1,4 @@
-apiscol
-=======
+apiscol-admin
+=============
 
-Service oriented learning object repository
+Administration interface for Apiscol, service oriented learning object repository
