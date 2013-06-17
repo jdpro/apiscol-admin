@@ -316,20 +316,55 @@ function hasProgramEntry(id, purpose, standard, source) {
 			});
 	return found;
 }
+function displayVcards() {
+	$("tr.role td.vcard-string", "div#contributors-container")
+			.each(
+					function(index, elem) {
+						var vcardString = $(elem).text();
+						var role = $(elem).prev("th.role-label").text();
+						$(elem)
+								.closest("tr")
+								.append(
+										$('<input type="hidden" name="lifeCycle-contributor-vcard[]" value="'
+												+ vcardString + '"/>'))
+								.append(
+										$('<input type="hidden" name="lifeCycle-contributor-vcard[]" value="'
+												+ role + '"/>'));
+						$(elem).replaceWith(
+								vCard.initialize(vcardString).to_html());
+					});
+}
 function handleContributors() {
-	$("tr.role td.vcard-string", "div#contributors-container").each(
-			function(index, elem) {
-				var vcardString = $(elem).text();
-				$(elem).closest("tr").data(vcardString);
-				$(elem).replaceWith(vCard.initialize(vcardString).to_html());
-			});
+	displayVcards()
 	$("div#contributors-container.element span.register-entry",
-			"form#formulaire_scolomfr").button({
-		icons : {
-			primary : "ui-icon-add"
-		},
-		text : true
-	}).click(function() {
-
-	});
+			"form#formulaire_scolomfr")
+			.button({
+				icons : {
+					primary : "ui-icon-add"
+				},
+				text : true
+			})
+			.click(
+					function() {
+						var vcard = "BEGIN:VCARD VERSION:3.0[FN][N][ORG]\nEND:VCARD";
+						var org = $(this).prev("input").val();
+						var fn = $(this).prev("input").prev("input").val();
+						if (!org.match(/^\s*$/))
+							vcard = vcard.replace("[ORG]", "\nORG:" + org);
+						else
+							vcard = vcard.replace("[ORG]", "");
+						if (!fn.match(/^\s*$/)) {
+							vcard = vcard.replace("[FN]", "\nFN:" + fn);
+							vcard = vcard.replace("[N]", "\nN:" + fn);
+						} else {
+							vcard = vcard.replace("[FN]", "");
+							vcard = vcard.replace("[N]", "");
+						}
+						var role = $(this).closest("tr").find("select").val();
+						var line = '<tr class="role"><th class="role-label">[ROLE]</th><td class="vcard-string">[VCARD]</td></tr>';
+						line = line.replace("[ROLE]", role).replace("[VCARD]",
+								vcard);
+						$(line).insertBefore($(this).closest("tr"));
+						displayVcards();
+					});
 }
