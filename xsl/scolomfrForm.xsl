@@ -43,9 +43,44 @@
 									contributeurs :
 								</div>
 								<div class="elt_champ_form">
-									<ul>
+									<table>
 										<xsl:apply-templates select="lom:lom/lom:lifeCycle/lom:contribute"></xsl:apply-templates>
-									</ul>
+										<tr>
+											<xsl:variable name="role-vocabvalues"
+												select="document('../scolomfr/xsd/scolomfr/scolomfrVocabValues.xsd')/xs:schema" />
+											<xsl:variable name="lomfr-role-vocabvalues"
+												select="document('../scolomfr/xsd/lomfr/lomfrVocabValues.xsd')/xs:schema" />
+											<th>
+												<select size="1">
+													<xsl:for-each
+														select="$lomfr-role-vocabvalues/*[@name='roleValues']/xs:restriction/xs:enumeration">
+														<option>
+															<xsl:attribute name="value">
+																<xsl:value-of select="@value"></xsl:value-of>
+															</xsl:attribute>
+															<xsl:value-of select="@value"></xsl:value-of>
+														</option>
+													</xsl:for-each>
+													<xsl:for-each
+														select="$role-vocabvalues/*[@name='roleValues']/xs:restriction/xs:enumeration">
+														<option>
+															<xsl:attribute name="value">
+															<xsl:value-of select="@value"></xsl:value-of>
+															</xsl:attribute>
+															<xsl:value-of select="@value"></xsl:value-of>
+														</option>
+													</xsl:for-each>
+												</select>
+											</th>
+											<td>
+											<input type="text" placeholder="Nom, prenom"></input>
+											<input type="text" placeholder="Organisation"></input>
+												<span class="register-entry">
+													Ajouter
+												</span>
+											</td>
+										</tr>
+									</table>
 								</div>
 
 							</div>
@@ -470,18 +505,18 @@
 			<xsl:value-of select="lom:date/lom:dateTime"></xsl:value-of>
 		</xsl:variable>
 
-		<xsl:element name="li" namespace="">
+		<xsl:element name="tr" namespace="">
 			<xsl:attribute name="class">
 								<xsl:value-of select="'role'"></xsl:value-of>
 							</xsl:attribute>
-			<xsl:element name="span" namespace="">
+			<xsl:element name="th" namespace="">
 				<xsl:attribute name="class">
 								<xsl:value-of select="'role-label'"></xsl:value-of>
 							</xsl:attribute>
 				<xsl:value-of select="$role"></xsl:value-of>
 
 			</xsl:element>
-			<xsl:element name="span" namespace="">
+			<xsl:element name="td" namespace="">
 				<xsl:attribute name="class">
 								<xsl:value-of select="'vcard-string'"></xsl:value-of>
 							</xsl:attribute>

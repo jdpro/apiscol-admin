@@ -1059,7 +1059,7 @@ html.js body div.content div#edit.detail-pane div.pane form#formulaire_scolomfr 
 	display: none;
 }
 
-html.js body div.content div#edit.detail-pane div.pane form#formulaire_scolomfr div#visualisation div.cadre details div div.entry-list-container.element span.register-entry span.ui-button-icon-primary
+html.js body div.content div#edit.detail-pane div.pane form#formulaire_scolomfr div#visualisation div.cadre details div div.entry-list-container.element span.register-entry span.ui-button-icon-primary,html.js body div.content div#edit.detail-pane div.pane form#formulaire_scolomfr div#visualisation div.cadre details div div#contributors-container.element table tbody tr td span.register-entry span.ui-button-icon-primary
 	{
 	background-image: url("../img/ajouter.png");
 }
@@ -1098,6 +1098,21 @@ html.js div#edit.detail-pane form#formulaire_scolomfr div#visualisation div.cadr
 	border: none;
 	padding: 0;
 	margin: 0;
+}
+
+html.js body div.content div#edit.detail-pane div.pane form#formulaire_scolomfr div#visualisation div.cadre details div div#contributors-container.element table tbody tr td span.register-entry
+	{
+	margin-left: 1em;
+}
+
+html.js body div.content div#edit.detail-pane div.pane form#formulaire_scolomfr div#visualisation div.cadre details div div#contributors-container.element div.elt_champ_form table tbody tr th select,
+html.js body div.content div#edit.detail-pane div.pane form#formulaire_scolomfr div#visualisation div.cadre details div div#contributors-container.element div.elt_champ_form table tbody tr th input
+	{
+	margin-bottom: 0px;	
+	vertical-align: middle;
+}
+html.js body div.content div#edit.detail-pane div.pane form#formulaire_scolomfr div#visualisation div.cadre details.open div div#contributors-container.element div.elt_champ_form table tbody tr th {
+	text-align: left;
 }
 /*
 edit url
@@ -1324,7 +1339,7 @@ html.js div#display.detail-pane div.pane div.custom-image-input-container form#s
 	position: absolute;
 	left: 0;
 	top: 0;
-	filter: alpha(opacity =                                                 1);
+	filter: alpha(opacity =                                                   1);
 	-moz-opacity: 0.01;
 	opacity: 0.01;
 	z-index: 999;

@@ -81,11 +81,8 @@ function initScolomFr() {
 	$("div#difficulty-container.element div select").change(function() {
 		activateSubmitButton(true);
 	});
-	$("div.elt_champ_form ul li.role span.vcard-string",
-			"div#contributors-container").each(function(index, elem) {
-		var vcardString = $(elem).text();
-		$(elem).html(vCard.initialize(vcardString).to_html());
-	})
+	handleContributors();
+
 }
 function setDirty(bool) {
 	if (bool)
@@ -318,4 +315,21 @@ function hasProgramEntry(id, purpose, standard, source) {
 				;
 			});
 	return found;
+}
+function handleContributors() {
+	$("tr.role td.vcard-string", "div#contributors-container").each(
+			function(index, elem) {
+				var vcardString = $(elem).text();
+				$(elem).closest("tr").data(vcardString);
+				$(elem).replaceWith(vCard.initialize(vcardString).to_html());
+			});
+	$("div#contributors-container.element span.register-entry",
+			"form#formulaire_scolomfr").button({
+		icons : {
+			primary : "ui-icon-add"
+		},
+		text : true
+	}).click(function() {
+
+	});
 }
