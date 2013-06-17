@@ -10,6 +10,7 @@ class ResourcesDetailEditController extends AbstractResourcesDetailController {
 		$this->mainController->addScript('details');
 		$this->mainController->addScript('dynatree');
 		$this->mainController->addScript('tagit');
+		$this->mainController->addScript('vcard');
 		$this->mainController->addScript('scolomfr_client');
 		$this->mainController->addScript('init_scolomfr');
 		$this->mainController->addCss('vocabnomen');
