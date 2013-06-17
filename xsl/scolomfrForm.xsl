@@ -38,9 +38,9 @@
 								<xsl:call-template name="generalResourceType"></xsl:call-template>
 
 							</div>
-							<div name="element" class="element" id="keyword-container">
+							<div name="element" class="element" id="contributors-container">
 								<div class="elt_label">
-									mot clé libre :
+									contributeurs :
 								</div>
 								<div class="elt_champ_form">
 									<ul>
@@ -481,16 +481,15 @@
 				<xsl:value-of select="$role"></xsl:value-of>
 
 			</xsl:element>
-			<xsl:element name="ul" namespace="">
-				<xsl:element name="li" namespace="">
-					<xsl:variable name="vcardstring">
-						<xsl:value-of select="lom:entity"></xsl:value-of>
-					</xsl:variable>
-					<xsl:value-of select="$vcardstring"></xsl:value-of>
+			<xsl:element name="span" namespace="">
+				<xsl:attribute name="class">
+								<xsl:value-of select="'vcard-string'"></xsl:value-of>
+							</xsl:attribute>
+				<xsl:value-of select="lom:entity"></xsl:value-of>
 
 
-				</xsl:element>
 			</xsl:element>
+
 		</xsl:element>
 
 	</xsl:template>

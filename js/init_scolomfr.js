@@ -32,7 +32,7 @@ var disableDynatreeOnSelect;
 var submitButton;
 
 function initScolomFr() {
-	
+
 	classifications = new Object();
 	$("#ned_tree").append(ajouterChampProgramme(ned));
 	$("#ens_tree").append(ajouterChampProgramme(ens));
@@ -81,19 +81,22 @@ function initScolomFr() {
 	$("div#difficulty-container.element div select").change(function() {
 		activateSubmitButton(true);
 	});
+	$("div.elt_champ_form ul li.role span.vcard-string",
+			"div#contributors-container").each(function(index, elem) {
+		var vcardString = $(elem).text();
+		$(elem).html(vCard.initialize(vcardString).to_html());
+	})
 }
 function setDirty(bool) {
-	if(bool)
+	if (bool)
 		$(window)
-		.bind(
-				'beforeunload',
-				function() {
-					return "Voulez vous réellement abandonner vos modifications non enregistrées ?";
-				});
-	else 
-		$(window)
-		.unbind(
-				'beforeunload');
+				.bind(
+						'beforeunload',
+						function() {
+							return "Voulez vous réellement abandonner vos modifications non enregistrées ?";
+						});
+	else
+		$(window).unbind('beforeunload');
 }
 function initializeSelect(key, name) {
 	var tagitContainer = $("div#" + key
