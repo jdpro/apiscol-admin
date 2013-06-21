@@ -1111,8 +1111,18 @@ html.js body div.content div#edit.detail-pane div.pane form#formulaire_scolomfr 
 	margin-bottom: 0px;	
 	vertical-align: middle;
 }
-html.js body div.content div#edit.detail-pane div.pane form#formulaire_scolomfr div#visualisation div.cadre details.open div div#contributors-container.element div.elt_champ_form table tbody tr th {
+html.js body div.content div#edit.detail-pane div.pane form#formulaire_scolomfr div#visualisation div.cadre details div div#contributors-container.element div.elt_champ_form table tbody tr th {
 	text-align: left;
+}
+html.js body div.content div#edit.detail-pane div.pane form#formulaire_scolomfr div#visualisation div.cadre details div div#contributors-container.element div.elt_champ_form table tbody tr.role td span.delete-button,
+html.js body div.content div#edit.detail-pane div.pane form#formulaire_scolomfr div#visualisation div.cadre details div div#contributors-container.element div.elt_champ_form table tbody tr td span.register-entry {
+	width:24px;
+	height: 24px;
+	float: right;
+}
+html.js body div.content div#edit.detail-pane div.pane form#formulaire_scolomfr div#visualisation div.cadre details div div#contributors-container.element div.elt_champ_form table tbody tr td span.register-entry span.ui-button-icon-primary {
+	margin-left: -7px;
+	margin-top: -7px;	
 }
 /*
 edit url
@@ -1526,7 +1536,7 @@ html.js.no-details details summary {
 	display: block;
 }
 /* Pretty printing styles. Used with prettify.js. */
-html.js.no-details body div.content div#uris.detail-pane div.uris-bloc details.open div pre.prettyprint
+html.js.no-details body div.content div#uris.detail-pane div.uris-bloc details div pre.prettyprint
 	{
 	border: none;
 	margin-top: 0.5em;

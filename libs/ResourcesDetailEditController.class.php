@@ -191,7 +191,8 @@ class ResourcesDetailEditController extends AbstractResourcesDetailController {
 				$this->model->getLomMetadata()->updateDifficulty(Security :: $_CLEAN['educational-difficulty']);
 			if(array_key_exists('classifications',Security::$_CLEAN))
 				$this->model->getLomMetadata()->updateClassifications(Security :: $_CLEAN['classifications']);
-
+			if(array_key_exists('lifeCycle-contributor-vcard',Security::$_CLEAN) && array_key_exists('lifeCycle-contributor-date',Security::$_CLEAN) && array_key_exists('lifeCycle-contributor-role',Security::$_CLEAN))
+				$this->model->getLomMetadata()->updateContributors(Security :: $_CLEAN['lifeCycle-contributor-vcard'], Security :: $_CLEAN['lifeCycle-contributor-role'], Security :: $_CLEAN['lifeCycle-contributor-date']);
 			try {
 				$this->model->getLomMetadata()->send($this->model->getMetadata()->getId(), $this->model->getMetadata()->getEtag());
 			} catch (HttpRequestException $e) {

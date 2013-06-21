@@ -73,10 +73,8 @@
 												</select>
 											</th>
 											<td>
-												<input type="text" placeholder="Nom, prenom"></input>
-											</td>
-											<td>
-												<input type="text" placeholder="Organisation"></input>
+												<input type="text" placeholder="Nom, prenom" class="name-input"></input>
+												<input type="text" placeholder="Organisation" class="org-input"></input>
 											</td>
 											<td>
 												<input type="text" placeholder="Date" class="date-input"></input>

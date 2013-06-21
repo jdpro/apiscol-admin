@@ -59,6 +59,9 @@ class Security {
 			"educational-educationalMethod"=>"string-array",
 			"educational-activity"=>"string-array",
 			"educational-intendedEndUserRole"=>"string-array",
+			"lifeCycle-contributor-date"=>"string-array",
+			"lifeCycle-contributor-vcard"=>"string-array",
+			"lifeCycle-contributor-role"=>"string-array",
 			"educational-difficulty"=>"string",
 			"classifications" => "json"
 

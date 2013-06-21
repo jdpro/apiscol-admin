@@ -94,7 +94,6 @@ vCard = {
 		}
 		var markers = /(version|n|fn|title|org|end)\:/ig;
 		_input = _input.replace(markers, "\n$1:");
-		console.log(_input)
 		var lines = _input.split(/\r?\n/);
 		for (n in lines) {
 			line = lines[n];

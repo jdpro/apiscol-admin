@@ -322,14 +322,18 @@ function displayVcards() {
 					function(index, elem) {
 						var vcardString = $(elem).text();
 						var role = $(elem).prev("th.role-label").text();
+						var date = $(elem).next("td.date-label").text();
 						var tr = $(elem).closest("tr");
 						tr
 								.append(
 										$('<input type="hidden" name="lifeCycle-contributor-vcard[]" value="'
 												+ vcardString + '"/>'))
 								.append(
-										$('<input type="hidden" name="lifeCycle-contributor-vcard[]" value="'
-												+ role + '"/>'));
+										$('<input type="hidden" name="lifeCycle-contributor-role[]" value="'
+												+ role + '"/>'))
+								.append(
+										$('<input type="hidden" name="lifeCycle-contributor-date[]" value="'
+												+ date + '"/>'));
 						$(elem).replaceWith(
 								vCard.initialize(vcardString).to_html());
 						tr.find("span.delete-button").button({
@@ -339,6 +343,7 @@ function displayVcards() {
 							text : false
 						}).click(function() {
 							tr.remove();
+							activateSubmitButton(true);
 						});
 					});
 }
@@ -346,7 +351,7 @@ function handleContributors() {
 	displayVcards();
 	$("div#contributors-container.element input.date-input",
 			"form#formulaire_scolomfr").datepicker();
-	$("div#contributors-container.element span.register-entry",
+	var addButton = $("div#contributors-container.element span.register-entry",
 			"form#formulaire_scolomfr")
 			.button({
 				icons : {
@@ -357,8 +362,13 @@ function handleContributors() {
 			.click(
 					function() {
 						var vcard = "BEGIN:VCARD VERSION:3.0[FN][N][ORG]\nEND:VCARD";
-						var org = $(this).prev("input").val();
-						var fn = $(this).prev("input").prev("input").val();
+						var tr = $(this).closest("tr");
+						var org = tr.find("input.org-input").val();
+						tr.find("input.org-input").val("");
+						var date = tr.find("input.date-input").val();
+						tr.find("input.date-input").val("");
+						var fn = tr.find("input.name-input").val();
+						tr.find("input.name-input").val("");
 						if (!org.match(/^\s*$/))
 							vcard = vcard.replace("[ORG]", "\nORG:" + org);
 						else
@@ -371,10 +381,31 @@ function handleContributors() {
 							vcard = vcard.replace("[N]", "");
 						}
 						var role = $(this).closest("tr").find("select").val();
-						var line = '<tr class="role"><th class="role-label">[ROLE]</th><td class="vcard-string">[VCARD]</td></tr>';
+						var line = '<tr class="role"><th class="role-label">[ROLE]</th><td class="vcard-string">[VCARD]</td><td class="date-label">[DATE]</td><td><span class="delete-button"></span></td></tr>';
 						line = line.replace("[ROLE]", role).replace("[VCARD]",
-								vcard);
+								vcard).replace("[DATE]", inverseDate(date));
 						$(line).insertBefore($(this).closest("tr"));
 						displayVcards();
+						addButton.button("disable");
+						activateSubmitButton(true);
 					});
+	addButton.closest("tr").bind(
+			"click change keyup",
+			function() {
+				var org = $(this).find("input.org-input").val();
+				var date = $(this).find("input.date-input").val();
+				var fn = $(this).find("input.name-input").val();
+
+				var active = true;
+				active = active && (!org.match(/^\s*$/) || !fn.match(/^\s*$/))
+						&& !date.match(/^\s*$/);
+				addButton.button(active ? "enable" : "disable");
+			});
+	addButton.button("disable");
+}
+function inverseDate(dateStr) {
+	var tab = dateStr.split("/");
+	if (tab.length < 3)
+		return dateStr;
+	return tab[2] + "-" + tab[0] + "-" + tab[1];
 }

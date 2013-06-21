@@ -90,6 +90,17 @@ class ScoLOMfrDAO extends AbstractDAO {
 		}
 		$this->removeVoidClassifications();
 	}
+	public function updateContributors($vcards, $roles, $dates) {
+		$this->cleanContributes();
+		for ($i = 0; $i < count($vcards); $i++) {
+			$this->createContribute($vcards[$i], $roles[$i], $dates[$i]);
+		}
+	}
+	private function cleanContributes() {
+		while($this->getLifeCycleElement()->getElementsByTagName("contribute")->length>0) {
+			$this->getLifeCycleElement()->removeChild($this->getLifeCycleElement()->getElementsByTagName("contribute")->item(0));
+		}
+	}
 	public function getGeneralElement() {
 		return $this->document->getElementsByTagName("general")->item(0);
 	}
@@ -232,6 +243,33 @@ class ScoLOMfrDAO extends AbstractDAO {
 				$classification->parentNode->removeChild($classification);
 		}
 	}
+
+	private function createContribute($vcard, $role, $date) {
+		echo ($role.'\n');
+		$contribute = $this->document->createElement("contribute");
+		$roleElem = $this->document->createElement("role");
+		$entity = $this->document->createElement("entity");
+		$dateElem = $this->document->createElement("date");
+		$source = $this->document->createElement("source");
+		$value = $this->document->createElement("value");
+		$dateTime = $this->document->createElement("dateTime");
+		$sourceValue = $this->document->createTextNode("LOMv1.0");
+		$valueValue = $this->document->createTextNode($role);
+		$entityValue = $this->document->createTextNode($vcard);
+		$dateTimeValue = $this->document->createTextNode($date);
+		$source->appendChild($sourceValue);
+		$value->appendChild($valueValue);
+		$roleElem->appendChild($source);
+		$roleElem->appendChild($value);
+		$contribute->appendChild($roleElem);
+		$entity->appendChild($entityValue);
+		$contribute->appendChild($entity);
+		$dateTime->appendChild($dateTimeValue);
+		$dateElem->appendChild($dateTime);
+		$contribute->appendChild($dateElem);
+		$this->getLifeCycleElement()->appendChild($contribute);
+	}
+
 	public function createClassificationElement($source,$value) {
 		$classification = $this->document->createElement("classification");
 		$this->document->documentElement->appendChild($classification);
@@ -281,6 +319,9 @@ class ScoLOMfrDAO extends AbstractDAO {
 	}
 	public function getDescriptionElement() {
 		return $this->getGeneralElement()->getElementsByTagName("description")->item(0);
+	}
+	public function getLifeCycleElement() {
+		return $this->document->getElementsByTagName("lifeCycle")->item(0);
 	}
 	public function send($mdid, $ifMatch) {
 		$this->document->formatOutput=false;
