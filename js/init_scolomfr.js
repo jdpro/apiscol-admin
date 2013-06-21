@@ -322,8 +322,8 @@ function displayVcards() {
 					function(index, elem) {
 						var vcardString = $(elem).text();
 						var role = $(elem).prev("th.role-label").text();
-						$(elem)
-								.closest("tr")
+						var tr = $(elem).closest("tr");
+						tr
 								.append(
 										$('<input type="hidden" name="lifeCycle-contributor-vcard[]" value="'
 												+ vcardString + '"/>'))
@@ -332,17 +332,27 @@ function displayVcards() {
 												+ role + '"/>'));
 						$(elem).replaceWith(
 								vCard.initialize(vcardString).to_html());
+						tr.find("span.delete-button").button({
+							icons : {
+								primary : "ui-icon-close"
+							},
+							text : false
+						}).click(function() {
+							tr.remove();
+						});
 					});
 }
 function handleContributors() {
-	displayVcards()
+	displayVcards();
+	$("div#contributors-container.element input.date-input",
+			"form#formulaire_scolomfr").datepicker();
 	$("div#contributors-container.element span.register-entry",
 			"form#formulaire_scolomfr")
 			.button({
 				icons : {
 					primary : "ui-icon-add"
 				},
-				text : true
+				text : false
 			})
 			.click(
 					function() {

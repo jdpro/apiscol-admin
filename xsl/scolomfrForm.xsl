@@ -73,8 +73,15 @@
 												</select>
 											</th>
 											<td>
-											<input type="text" placeholder="Nom, prenom"></input>
-											<input type="text" placeholder="Organisation"></input>
+												<input type="text" placeholder="Nom, prenom"></input>
+											</td>
+											<td>
+												<input type="text" placeholder="Organisation"></input>
+											</td>
+											<td>
+												<input type="text" placeholder="Date" class="date-input"></input>
+											</td>
+											<td>
 												<span class="register-entry">
 													Ajouter
 												</span>
@@ -521,6 +528,23 @@
 								<xsl:value-of select="'vcard-string'"></xsl:value-of>
 							</xsl:attribute>
 				<xsl:value-of select="lom:entity"></xsl:value-of>
+
+
+			</xsl:element>
+			<xsl:element name="td" namespace="">
+				<xsl:attribute name="class">
+								<xsl:value-of select="'date-label'"></xsl:value-of>
+							</xsl:attribute>
+				<xsl:value-of select="$date"></xsl:value-of>
+
+
+			</xsl:element>
+			<xsl:element name="td" namespace="">
+				<xsl:element name="span" namespace="">
+					<xsl:attribute name="class">
+								<xsl:value-of select="'delete-button'"></xsl:value-of>
+							</xsl:attribute>
+				</xsl:element>
 
 
 			</xsl:element>
