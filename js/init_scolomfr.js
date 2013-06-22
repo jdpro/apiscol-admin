@@ -30,6 +30,7 @@ var dataSource = $("input#prefix").val() + "/data.php";
 var trees = new Object();
 var disableDynatreeOnSelect;
 var submitButton;
+var initialization = true;
 
 function initScolomFr() {
 
@@ -53,19 +54,20 @@ function initScolomFr() {
 			console.log(xhr.responseXML);
 		}
 	});
-	$("textarea#general-description").add($("input#general-title")).keyup(
+	$("textarea#general-description").add($("input#general-title")).add(
+			$("textarea#educational-description")).add(
+					$("textarea#general-coverage")).bind("keyup change",
 			function() {
 				activateSubmitButton(true);
-			}).change(function() {
-		activateSubmitButton(true);
-	});
+			});
 	$("ul", "#keyword-container").tagit({
 		itemName : 'general-keywords',
 		fieldName : 'general-keyword[]',
 		placeholderText : 'Saisissez puis "entrée"',
 		allowSpaces : true,
 		afterTagAdded : function() {
-			activateSubmitButton(true);
+			if (!initialization)
+				activateSubmitButton(true);
 		},
 		afterTagRemoved : function() {
 			activateSubmitButton(true);
@@ -82,6 +84,7 @@ function initScolomFr() {
 		activateSubmitButton(true);
 	});
 	handleContributors();
+	initialization = false;
 
 }
 function setDirty(bool) {

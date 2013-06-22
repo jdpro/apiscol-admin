@@ -27,6 +27,7 @@ class ThumbsSuggestionsDAO extends AbstractDAO {
 			return $href->item(0)->value;
 		else return "--";
 	}
+	
 
 }
 

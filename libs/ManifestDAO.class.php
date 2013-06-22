@@ -18,6 +18,8 @@ class ManifestDAO extends AbstractDAO {
 	function getEtag() {
 		assert(false);
 	}
+	protected function correctDocument() {
+	}
 
 }
 

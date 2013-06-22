@@ -33,6 +33,8 @@
 								</div>
 
 							</div>
+							<xsl:apply-templates select="/lom:lom/lom:general/lom:coverage"></xsl:apply-templates>
+
 							<div class="element ui-helper-clearfix  entry-list-container"
 								id="generalResourceType-container">
 								<xsl:call-template name="generalResourceType"></xsl:call-template>
@@ -98,8 +100,8 @@
 						<summary class="cadre_label">Description pédagogique de la
 							ressource</summary>
 						<div>
+							<xsl:apply-templates select="/lom:lom/lom:educational/lom:description"></xsl:apply-templates>
 							<div name="element" class="element" id="elt_droite_11">
-								<div id="nb_11" class="elt_nb">0</div>
 								<div class="elt_champ_form">
 									<div id="ned_tree">
 
@@ -126,7 +128,6 @@
 							</div>
 
 							<div name="element" class="element" id="elt_droite_11">
-								<div id="nb_11" class="elt_nb">0</div>
 								<div class="elt_champ_form">
 									<div id="ens_tree">
 
@@ -145,7 +146,6 @@
 							</div>
 
 							<div name="element" class="element" id="elt_droite_11">
-								<div id="nb_11" class="elt_nb">0</div>
 								<div class="elt_champ_form">
 									<div id="scc_tree">
 
@@ -189,8 +189,6 @@
 	<xsl:template match="/lom:lom/lom:general/lom:title">
 		<div name="element" class="element">
 			<div class="elt_label_obligatoire">titre :</div>
-			<div id="nb_2" class="elt_nb">0</div>
-
 			<div id="elt_champ_form_2_0" class="elt_champ_form">
 				<input name="general-title" id="general-title" type="text">
 					<xsl:attribute name="value">
@@ -208,9 +206,40 @@
 			<div class="elt_label_obligatoire">
 				description :
 			</div>
-			<div class="elt_nb">0</div>
 			<div class="elt_champ_form">
 				<textarea name="general-description" id="general-description"
+					cols="100" rows="7">
+					<xsl:attribute name="placeholder">
+					 <xsl:value-of select="'Non renseigné'"></xsl:value-of>
+					 </xsl:attribute>
+					<xsl:value-of select="lom:string"></xsl:value-of>
+				</textarea>
+			</div>
+		</div>
+	</xsl:template>
+	<xsl:template match="/lom:lom/lom:general/lom:coverage">
+		<div name="element" class="element">
+			<div class="elt_label_obligatoire">
+				couverture :
+			</div>
+			<div class="elt_champ_form">
+				<textarea name="general-coverage" id="general-coverage"
+					cols="100" rows="7">
+					<xsl:attribute name="placeholder">
+					 <xsl:value-of select="'Non renseigné'"></xsl:value-of>
+					 </xsl:attribute>
+					<xsl:value-of select="lom:string"></xsl:value-of>
+				</textarea>
+			</div>
+		</div>
+	</xsl:template>
+	<xsl:template match="/lom:lom/lom:educational/lom:description">
+		<div name="element" class="element">
+			<div class="elt_label_obligatoire">
+				description pédagogique :
+			</div>
+			<div class="elt_champ_form">
+				<textarea name="educational-description" id="educational-description"
 					cols="100" rows="7">
 					<xsl:attribute name="placeholder">
 					 <xsl:value-of select="'Non renseigné'"></xsl:value-of>

@@ -22,6 +22,8 @@ class ContentThumbsDAO extends AbstractDAO {
 		$atomNamespace = $this->document->lookupNamespaceUri("atom");
 		$this->xpath->registerNamespace('atom', $atomNamespace);
 	}
+	protected function correctDocument() {
+	}
 
 }
 

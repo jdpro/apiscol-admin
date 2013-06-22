@@ -9,9 +9,9 @@ class ScoLOMfrDAO extends AbstractDAO {
 
 	protected function acquireXMLString() {
 		assert(isset($this->url));
-		return $this->serviceAccess->getScoLomFr($this->url);
+		$scolomfr= $this->serviceAccess->getScoLomFr($this->url);
+		return $scolomfr;
 	}
-
 	function getDefaultNameSpace() {
 		return 'lom';
 	}
@@ -23,6 +23,9 @@ class ScoLOMfrDAO extends AbstractDAO {
 	}
 	public function updateDescription($title) {
 		$this->getDescriptionElement()->getElementsByTagName("string")->item(0)->nodeValue=$title;
+	}
+	public function updateCoverage($title) {
+		$this->getCoverageElement()->getElementsByTagName("string")->item(0)->nodeValue=$title;
 	}
 	public function updateKeywords($keywords) {
 		$this->cleanKeyWords();
@@ -41,6 +44,9 @@ class ScoLOMfrDAO extends AbstractDAO {
 		foreach ($learningResourceTypes as $learningResourceType) {
 			$this->addLearningResourceType($learningResourceType);
 		}
+	}
+	public function updateEducationalDescription($title) {
+		$this->getEducationalDescriptionElement()->getElementsByTagName("string")->item(0)->nodeValue=$title;
 	}
 	public function updatePlace($places) {
 		$this->cleanPlaces();
@@ -106,6 +112,9 @@ class ScoLOMfrDAO extends AbstractDAO {
 	}
 	public function getEducationalElement() {
 		return $this->document->getElementsByTagName("educational")->item(0);
+	}
+	public function getEducationalDescriptionElement() {
+		return $this->getEducationalElement()->getElementsByTagName("description")->item(0);
 	}
 	public function cleanClassification($source,$value) {
 		$classifications= $this->document->getElementsByTagName("classification");
@@ -316,6 +325,9 @@ class ScoLOMfrDAO extends AbstractDAO {
 	}
 	public function getTitleElement() {
 		return $this->getGeneralElement()->getElementsByTagName("title")->item(0);
+	}
+	public function getCoverageElement() {
+		return $this->getGeneralElement()->getElementsByTagName("coverage")->item(0);
 	}
 	public function getDescriptionElement() {
 		return $this->getGeneralElement()->getElementsByTagName("description")->item(0);
