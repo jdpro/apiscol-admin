@@ -116,6 +116,7 @@ function refreshTabsState() {
 									"wait");
 						},
 						complete : function(xhr) {
+							updateLinkButton();
 							handleUrlUpdateSuccess(xhr.responseXML);
 						}
 					});
@@ -144,6 +145,9 @@ function refreshTabsState() {
 	initScolomFr();
 	$('html').addClass($.fn.details.support ? 'details' : 'no-details');
 	$('details').details();
+}
+function updateLinkButton() {
+	$("a.ui-button", "form#update_url").attr("href", $("input", "form#update_url").val());
 }
 function activateUrlField(bool) {
 	if (bool) {
