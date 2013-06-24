@@ -56,10 +56,9 @@ function initScolomFr() {
 	});
 	$("textarea#general-description").add($("input#general-title")).add(
 			$("textarea#educational-description")).add(
-					$("textarea#general-coverage")).bind("keyup change",
-			function() {
-				activateSubmitButton(true);
-			});
+			$("textarea#general-coverage")).bind("keyup change", function() {
+		activateSubmitButton(true);
+	});
 	$("ul", "#keyword-container").tagit({
 		itemName : 'general-keywords',
 		fieldName : 'general-keyword[]',
@@ -141,32 +140,34 @@ function addEntryListInput(tagitContainer, value, key, name) {
 }
 
 function addSubmitButton() {
-	submitButton = $(document.createElement("span")).attr("title",
-			"enregistrer").button({
+	submitButton = $(document.createElement("span")).addClass("submit-button")
+			.attr("title", "enregistrer");
+	$("h2.submit-button-container", "div#edit.detail-pane")
+			.append(submitButton);
+	$("div.cadre summary", "div#visualisation").append(submitButton.clone());
+	$("span.submit-button").button({
 		icons : {
 			primary : "ui-icon-save"
 		},
 		text : false
 	}).click(function() {
 		$("form#formulaire_scolomfr").submit();
+		return false;
 	});
-	$("h2.submit-button-container", "div#edit.detail-pane")
-			.append(submitButton);
 	activateSubmitButton(false);
 	putWaiterOnSubmitButton(false);
-
 }
 function activateSubmitButton(bool) {
-	submitButton.button(bool ? "enable" : "disable");
+	$("span.submit-button").button(bool ? "enable" : "disable");
 	setDirty(bool);
 }
 function putWaiterOnSubmitButton(bool) {
 	if (bool)
-		submitButton.find("span.ui-icon").removeClass("ui-icon-save").addClass(
-				"ui-icon-wait");
+		$("span.submit-button").find("span.ui-icon")
+				.removeClass("ui-icon-save").addClass("ui-icon-wait");
 	else
-		submitButton.find("span.ui-icon").removeClass("ui-icon-wait").addClass(
-				"ui-icon-save");
+		$("span.submit-button").find("span.ui-icon")
+				.removeClass("ui-icon-wait").addClass("ui-icon-save");
 }
 function ajouterChampProgramme(program) {
 	var container = $(document.createElement("div")).addClass(

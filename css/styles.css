@@ -1020,7 +1020,7 @@ html.js div#edit.detail-pane div.pane form#formulaire_scolomfr div#visualisation
 	padding: 3px 3px 3px 15px;
 }
 
-html.js body div.content div#edit.detail-pane div.pane div.fixed-title-wrapper h2.ui-state-highlight.submit-button-container span.ui-button span.ui-button-icon-primary
+html.js span.ui-button.submit-button span.ui-button-icon-primary
 	{
 	background-image: url("../img/save_icon.png");
 	width: 32px;
@@ -1029,12 +1029,12 @@ html.js body div.content div#edit.detail-pane div.pane div.fixed-title-wrapper h
 	margin-top: -16px;
 }
 
-html.js body div.content div#edit.detail-pane div.pane div.fixed-title-wrapper h2.ui-state-highlight.submit-button-container span.ui-button span.ui-button-icon-primary.ui-icon-wait
+html.js span.ui-button.submit-button span.ui-button-icon-primary.ui-icon-wait
 	{
 	background-image: url("../img/wait-round.gif");
 }
 
-html.js body div.content div#edit.detail-pane div.pane div.fixed-title-wrapper h2.ui-state-highlight.submit-button-container span.ui-button
+html.js span.ui-button.submit-button 
 	{
 	display: block;
 	width: 38px;
@@ -1042,10 +1042,18 @@ html.js body div.content div#edit.detail-pane div.pane div.fixed-title-wrapper h
 	float: right;
 	margin-right: 12px;
 }
+html.js summary span.ui-button.submit-button 
+	{
+	margin-top: -12px;
+}
 
 html.js body div.content div#edit.detail-pane div.pane form#formulaire_scolomfr div#visualisation div.cadre details div div#keyword-container.element div.elt_champ_form span.delete-keyword-button span.ui-button-icon-primary,html.js body div.content div#edit.detail-pane div.pane form#formulaire_scolomfr div#visualisation div.cadre details div div.entry-list-container.element div.elt_champ_form span.delete-entry-button span.ui-button-icon-primary
 	{
 	background-image: url("../img/delete-icon.png");
+}
+html.js body div.content div#edit.detail-pane div.pane form#formulaire_scolomfr div#visualisation div.cadre span.submit-button {
+	float: right;
+	margin-right: 1em;
 }
 
 html.js body div.content div#edit.detail-pane div.pane form#formulaire_scolomfr div#visualisation div.cadre details div div#keyword-container.element div.elt_champ_form span.delete-keyword-button.ui-button,html.js body div.content div#edit.detail-pane div.pane form#formulaire_scolomfr div#visualisation div.cadre details div div.entry-list-container.element div.elt_champ_form span.delete-entry-button

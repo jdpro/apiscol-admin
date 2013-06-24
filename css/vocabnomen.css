@@ -1,128 +1,161 @@
 ﻿/* STYLES GENERAUX */
 /*##############################################################################################################*/
 #formulaire_scolomfr {
-    font-family:Arial, Verdana, Helvetica, sans-serif;
-    background-color:#fafafa;
-	font-size:12px;
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	background-color: #fafafa;
+	font-size: 12px;
 }
+
 #formulaire_scolomfr  img {
-    border: none;
+	border: none;
 }
-#formulaire_scolomfr a:link, a:visited, a:hover  {
-    color: black;
+
+#formulaire_scolomfr a:link,a:visited,a:hover {
+	color: black;
 }
-#formulaire_scolomfr div#visualisation div#cadre_droite_1.cadre div.element div.elt_label span a img,
-#formulaire_scolomfr div#visualisation div#cadre_droite_1.cadre div.element div.elt_champ_form a img {
+
+#formulaire_scolomfr div#visualisation div#cadre_droite_1.cadre div.element div.elt_label span a img,#formulaire_scolomfr div#visualisation div#cadre_droite_1.cadre div.element div.elt_champ_form a img
+	{
 	vertical-align: middle;
 }
+
 #formulaire_scolomfr #visualisation {
-	width:100%;
-    margin-left:auto;
-    margin-right:auto;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
-#formulaire_scolomfr input, select, textarea {
-    border: 1px solid #CCCCCC;
-    border-radius: 5px 5px 5px 5px;
-    font-family: Arial,Helvetica,sans-serif;
-    margin-bottom: 10px;
-    padding: 5px;
-    vertical-align: top;
-    -moz-border-radius:5px 5px 5px 5px;
-    -webkit-border-radius:5px 5px 5px 5px;
-    -khtml-border-radius:5px 5px 5px 5px;
+
+#formulaire_scolomfr input,select,textarea {
+	border: 1px solid #CCCCCC;
+	border-radius: 5px 5px 5px 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 10px;
+	padding: 5px;
+	vertical-align: top;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	-khtml-border-radius: 5px 5px 5px 5px;
 }
+
 #formulaire_scolomfr div#visualisation input#general-title {
 	width: 90%;
 }
-#formulaire_scolomfr 
-/* Element déposé dans la partie de droite */
+
+#formulaire_scolomfr /* Element déposé dans la partie de droite */ 
 .element {
-    background-color: #E6F4F6;
-    margin-bottom: 15px;
-    padding: 15px 5px 13px 10px;
-    text-align:left;
-    border-bottom: 1px solid #c0cbcd;
+	background-color: #E6F4F6;
+	margin-bottom: 15px;
+	padding: 15px 5px 13px 10px;
+	text-align: left;
+	border-bottom: 1px solid #c0cbcd;
 }
-#formulaire_scolomfr /* Element sélectionné */
+
+#formulaire_scolomfr /* Element sélectionné */ 
 .element_sel {
-    background-color: thistle;
-    margin-bottom: 15px;
-    padding: 3px 3px 3px 3px;
+	background-color: thistle;
+	margin-bottom: 15px;
+	padding: 3px 3px 3px 3px;
 }
-#formulaire_scolomfr .elt_label_obligatoire, .elt_label {
-    font-size: 1.3em;
-    height: 18px;
-    font-style: italic;
-    margin-bottom: 0.5em;
+
+#formulaire_scolomfr .elt_label_obligatoire,.elt_label {
+	font-size: 1.3em;
+	height: 18px;
+	font-style: italic;
+	margin-bottom: 0.5em;
 }
+
 #formulaire_scolomfr .elt_label_obligatoire:after {
-    color: darkgreen;
-    font-size: 90%;
-    vertical-align: top;
-    content: "*";
+	color: darkgreen;
+	font-size: 90%;
+	vertical-align: top;
+	content: "*";
 }
+
 #formulaire_scolomfr .elt_champ_form {
-    margin-left: 0px;
-    margin-top: 5px;
-	vertical-align:middle;
+	margin-left: 0px;
+	margin-top: 5px;
+	vertical-align: middle;
 }
+
 #formulaire_scolomfr .elt_scolomfr {
-    font-style: italic;
-    font-size: 13px;
-    height: 16px;
-    color:#9E1F63;
-    padding-bottom: 8px;
+	font-style: italic;
+	font-size: 13px;
+	height: 16px;
+	color: #9E1F63;
+	padding-bottom: 8px;
 }
+
 #formulaire_scolomfr .elt_icones_droite {
-    float: right;
+	float: right;
 }
-#formulaire_scolomfr .elt_modif_param, .elt_modif_voc, .elt_supprime {
-    margin-right: 7px;
+
+#formulaire_scolomfr .elt_modif_param,.elt_modif_voc,.elt_supprime {
+	margin-right: 7px;
 }
+
 #formulaire_scolomfr .elt_nb {
-    display: none;
+	display: none;
 }
+
 #formulaire_scolomfr .cadre {
-    background-color:#add8e6;
-    margin-bottom: 15px;
-    padding: 3px;
+	background-color: #add8e6;
+	margin-bottom: 15px;
+	padding: 3px;
 }
+
 #formulaire_scolomfr .cadre_label {
-    top:0px;
-    font-weight: bold;
-    font-size: 16px;
-    height: 25px;
-    text-align: left;
+	top: 0px;
+	font-weight: bold;
+	font-size: 16px;
+	height: 25px;
+	text-align: left;
 }
-#formulaire_scolomfr .elt_champ_form table{
-    border: none;
-    border-collapse : collapse;
-    color: #383838;
-    font-size: 12px;
+
+#formulaire_scolomfr .elt_champ_form table {
+	border: none;
+	border-collapse: collapse;
+	color: #383838;
+	font-size: 12px;
 }
+
 #formulaire_scolomfr .elt_champ_form table th {
-    background-color: #F7EDF3;
-    border: 0 none;
-    border-bottom: 1px solid #E4CDDB;
-    padding: 5px;
-    vertical-align: middle;
-    color:#9E1F63;
-    font-weight: bold;
-    text-align: center;
+	background-color: #F7EDF3;
+	border: 0 none;
+	border-bottom: 1px solid #E4CDDB;
+	padding: 5px;
+	vertical-align: middle;
+	color: #9E1F63;
+	font-weight: bold;
+	text-align: center;
 }
+
 #formulaire_scolomfr .elt_champ_form table td {
-    border: 0 none;
-    border-bottom: 1px solid #E4CDDB;
-    vertical-align: middle;
-    vertical-align: top;
-    padding: 5px;
+	border: 0 none;
+	border-bottom: 1px solid #E4CDDB;
+	vertical-align: middle;
+	vertical-align: top;
+	padding: 5px;
 }
-#formulaire_scolomfr .elt_champ_form table th a, table td a {
-    text-decoration: none;
+
+#formulaire_scolomfr .elt_champ_form table th a,table td a {
+	text-decoration: none;
 }
-#formulaire_scolomfr .elt_champ_form table td font.jour_selectionne{
-    color:#9E1F63;
-    font-weight: bold;
+
+#formulaire_scolomfr .elt_champ_form table td font.jour_selectionne {
+	color: #9E1F63;
+	font-weight: bold;
 }
-#formulaire_scolomfr input[type=checkbox] { border: none; line-height: 0px; padding:0px; margin-right: 7px;}
-#formulaire_scolomfr input[type=radio] { border: none; line-height: 0px; padding:0px; margin-right: 7px;}
+
+#formulaire_scolomfr input[type=checkbox] {
+	border: none;
+	line-height: 0px;
+	padding: 0px;
+	margin-right: 7px;
+}
+
+#formulaire_scolomfr input[type=radio] {
+	border: none;
+	line-height: 0px;
+	padding: 0px;
+	margin-right: 7px;
+}

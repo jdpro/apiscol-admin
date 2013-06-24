@@ -14,7 +14,7 @@
 		<xsl:value-of select="$url"></xsl:value-of>
 		</xsl:attribute>
 			<div id="visualisation">
-				<div class="cadre">
+				<div class="cadre ui-helper-clearfix">
 					<span class="cadre_icones_droite" name="cadre_icones"></span>
 					<details>
 						<summary class="cadre_label">Description documentaire de la
@@ -94,7 +94,7 @@
 						</div>
 					</details>
 				</div>
-				<div class="cadre">
+				<div class="cadre ui-helper-clearfix">
 					<span class="cadre_icones_droite" name="cadre_icones"></span>
 					<details>
 						<summary class="cadre_label">Description pédagogique de la

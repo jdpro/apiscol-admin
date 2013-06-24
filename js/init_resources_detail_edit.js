@@ -161,7 +161,6 @@ function activateUrlField(bool) {
 function showProgressBar(bool) {
 	$("div.pane div.file-input-container form#send_file div.bar",
 			"div#edit.detail-pane").toggle(bool);
-
 }
 function getDisplayParameters() {
 	return "";
