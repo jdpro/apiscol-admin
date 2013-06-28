@@ -9,6 +9,7 @@ class HttpRequestException extends Exception
 		$this->url=$url;
 		$this->headers=$headers;
 		$this->content=$content;
+		//debug_print_backtrace();
 		parent::__construct(implode("//", $headers), $code);
 	}
 
