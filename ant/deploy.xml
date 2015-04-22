@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE project>
-<project name="Ftp serveur de développement" default="transfert_ftp" basedir="../">
+<project name="Ftp serveur de développement" default="transfert_ftp"
+	basedir="../">
 	<description>
 		Déploie apiscol admin
 	</description>
 	<property name="ant.dir" value="${basedir}/ant" />
 	<target name="transfert_ftp">
-		<input message="Choix du serveur" validargs="joachim-dornbusch.ac-versailles.fr,www.apiscol-tests.net" addproperty="host.id" defaultvalue="joachim-dornbusch.ac-versailles.fr" />
+		<input message="Choix du serveur" validargs="apsadmin.vm"
+			addproperty="host.id" defaultvalue="apsadmin.vm" />
 		<input message="Mot de passe" addproperty="divers.hebergement.web" />
 		<loadproperties srcFile="${ant.dir}/${host.id}.properties" />
-		<ftp action="mkdir" verbose="true" server="${nom.hebergement.web}" port="21" remotedir="${dir.hebergement.web}" userid="${login.hebergement.web}" password="${divers.hebergement.web}" passive="yes" depends="yes" />
-		<ftp verbose="true" server="${nom.hebergement.web}" port="21" remotedir="${dir.hebergement.web}" userid="${login.hebergement.web}" password="${divers.hebergement.web}" passive="yes" depends="yes">
+		<ftp action="mkdir" verbose="true" server="${nom.hebergement.web}"
+			port="21" remotedir="${dir.hebergement.web}" userid="${login.hebergement.web}"
+			password="${divers.hebergement.web}" passive="yes" depends="yes" />
+		<ftp verbose="true" server="${nom.hebergement.web}" port="21"
+			remotedir="${dir.hebergement.web}" userid="${login.hebergement.web}"
+			password="${divers.hebergement.web}" passive="yes" depends="yes">
 			<fileset dir="${basedir}">
 				<include name="config/${host.id}_parameters.txt" />
 				<include name="css/**" />

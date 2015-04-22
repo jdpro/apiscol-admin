@@ -295,9 +295,6 @@ class Model {
 		else $resultOfMetadataImportXPath->registerNamespace('apiscol', $rootNamespace);
 		return $resultOfMetadataImportXPath;
 	}
-	public function resetAuthorizationToken() {
-		$this->getServiceAccess()->resetAuthorizationToken();
-	}
 
 
 }

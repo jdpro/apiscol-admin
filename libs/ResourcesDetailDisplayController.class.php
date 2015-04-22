@@ -57,16 +57,8 @@ class ResourcesDetailDisplayController extends AbstractResourcesDetailController
 			try {
 				$this->model->assignThumbToMetadata(Security :: $_CLEAN['choose-thumb']);
 			} catch (HttpRequestException $e) {
-				if($e->getCode()=="403" && ! $secondTry)
-				{
-					$this->model->resetAuthorizationToken();
-					$this->processThumbChoice(true);
-				}
 				$intro='Il y a eu un problème... (erreur '.$e->getCode().')';
-				switch ($e->getCode()) {
-					case "403":
-						$intro='Vous n\'avez plus l\'autorisation d\'écrire (erreur '.$e->getCode().')';
-						break;
+				switch ($e->getCode()) {					
 					case "412":
 						$intro='Quelqu\'un a modifé cette ressource en même temps que vous (erreur '.$e->getCode().')';
 						break;
@@ -98,17 +90,8 @@ class ResourcesDetailDisplayController extends AbstractResourcesDetailController
 				try {
 					$this->model->assignCustomThumbToMetadata(Security::$_CLEAN['custom-thumb']);
 				} catch (HttpRequestException $e) {
-
-					if($e->getCode()=="403" && ! $secondTry)
-					{
-						$this->model->resetAuthorizationToken();
-						$this->processCustomThumb(true);
-					}
 					$intro='Il y a eu un problème... (erreur '.$e->getCode().')';
-					switch ($e->getCode()) {
-						case "403":
-							$intro='Vous n\'avez plus l\'autorisation d\'écrire (erreur '.$e->getCode().')';
-							break;
+					switch ($e->getCode()) {						
 						case "412":
 							$intro='Quelqu\'un a modifé cette ressource en même temps que vous (erreur '.$e->getCode().')';
 							break;

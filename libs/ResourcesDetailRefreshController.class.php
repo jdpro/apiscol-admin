@@ -52,9 +52,8 @@ class ResourcesDetailRefreshController extends AbstractResourcesDetailController
 			return $this->model->getContent()->sendRefreshRequest($target);
 		} catch (HttpRequestException $e) {
 
-			if($e->getCode()=="403" && ! $secondTry)
+			if(! $secondTry)
 			{
-				$this->model->resetAuthorizationToken();
 				$this->processRefreshRequest(true);
 			} else {
 				$intro='Il y a eu un problème... (erreur '.$e->getCode().')';
@@ -77,7 +76,6 @@ class ResourcesDetailRefreshController extends AbstractResourcesDetailController
 		} catch (HttpRequestException $e) {
 			if($e->getCode()=="403")
 			{
-				$this->model->resetAuthorizationToken();
 				return $this->model->technicalInfosSyncRequest();
 			}
 
@@ -87,9 +85,8 @@ class ResourcesDetailRefreshController extends AbstractResourcesDetailController
 			return $this->model->getMetadata()->sendRefreshRequest($target);
 		} catch (HttpRequestException $e) {
 
-			if($e->getCode()=="403" && ! $secondTry)
+			if(! $secondTry)
 			{
-				$this->model->resetAuthorizationToken();
 				$this->processRefreshRequest(true);
 			} else {
 				$intro='Il y a eu un problème... (erreur '.$e->getCode().')';

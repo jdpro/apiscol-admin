@@ -119,9 +119,8 @@ class ResourcesListController  extends AbstractResourcesController{
 
 					
 			} catch (HttpRequestException $e) {
-				if($e->getCode()=="403" && ! $secondTry)
+				if(! $secondTry)
 				{
-					$this->model->resetAuthorizationToken();
 					$this->processDeleteRequest(true);
 				} else {
 					$this->mainController->setInError(true);
