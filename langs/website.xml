@@ -79,6 +79,18 @@
 		<translation lang="fr">Recherche</translation>
 		<translation lang="en-gb">Recherche</translation>
 	</xmldata>
+	<xmldata id="RESOURCES-LIST-AGGREGATION-LEVEL-LEARNING-OBJECT">
+		<translation lang="fr">Niveau d'agrégation : objet d'apprentissage</translation>
+		<translation lang="en-gb">Agregation level : learning object</translation>
+	</xmldata>
+	<xmldata id="RESOURCES-LIST-AGGREGATION-LEVEL-LESSON">
+		<translation lang="fr">Niveau d'agrégation : leçon</translation>
+		<translation lang="en-gb">Agregation level : lesson</translation>
+	</xmldata>
+	<xmldata id="RESOURCES-LIST-AGGREGATION-LEVEL-UNKNOWN">
+		<translation lang="fr">Niveau d'agrégation : inconnu</translation>
+		<translation lang="en-gb">Agregation level : inconnu</translation>
+	</xmldata>
 	<xmldata id="ERROR-IMPOSSIBLE-CONNECT-META">
 		<translation lang="fr">Impossible de se connecter au service
 			ApiScol Meta pour obtenir la liste des ressources</translation>

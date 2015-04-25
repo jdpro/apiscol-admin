@@ -8,6 +8,7 @@ var sendFileButton;
 function secundaryInit() {
 	activeLabel = "second_menu_item_edit";
 	showProgressBar(false);
+	showProgressInformation(false);
 	refreshTabsState();
 }
 function refreshTabsState() {
@@ -147,7 +148,8 @@ function refreshTabsState() {
 	$('details').details();
 }
 function updateLinkButton() {
-	$("a.ui-button", "form#update_url").attr("href", $("input", "form#update_url").val());
+	$("a.ui-button", "form#update_url").attr("href",
+			$("input", "form#update_url").val());
 }
 function activateUrlField(bool) {
 	if (bool) {
@@ -161,6 +163,9 @@ function activateUrlField(bool) {
 function showProgressBar(bool) {
 	$("div.pane div.file-input-container form#send_file div.bar",
 			"div#edit.detail-pane").toggle(bool);
+}
+function showProgressInformation(bool) {
+	$("div.progress").toggle(bool);
 }
 function getDisplayParameters() {
 	return "";
@@ -292,6 +297,7 @@ function displayResult(status, message, decoration) {
 		imgsrc = "success.png";
 		break;
 	}
+	showProgressInformation(true);
 	$("#upload-result-message").removeClass().addClass(decorationClass).text(
 			message);
 	$("#upload-result-status").removeClass().addClass(decorationClass).find(

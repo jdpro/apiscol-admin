@@ -204,6 +204,8 @@ class RestClient {
 			$header = $http_response_header;
 		else
 			throw new BadUrlRequestException ( $pUrl );
+		if(false===$stream)
+			throw new ConnexionFailureException($pUrl,$http_response_header);
 		$content = stream_get_contents ( $stream );
 		$this->checkHeader ( $header, $content, $pUrl );
 		$header = stream_get_meta_data ( $stream );

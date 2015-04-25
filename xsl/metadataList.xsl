@@ -147,12 +147,24 @@
 					<xsl:text>/img/</xsl:text>
 					<xsl:choose>
 					<xsl:when test="$category='learning object'">
-					<xsl:text>aggregation_level_learning_object.gif</xsl:text>
+					<xsl:text>aggregation_level_learning_object.png</xsl:text>
 					</xsl:when>
 					<xsl:when test="$category='lesson'">
 					<xsl:text>aggregation_level_lesson.png</xsl:text>
 					</xsl:when>
 					<xsl:otherwise><xsl:text>aggregation_level_unkhnown.png</xsl:text></xsl:otherwise>
+					</xsl:choose>
+					</xsl:attribute>
+					<xsl:attribute name="title">
+					<xsl:choose>
+					<xsl:when test="$category='learning object'">
+					<xsl:text>{RESOURCES-LIST-AGGREGATION-LEVEL-LEARNING-OBJECT}</xsl:text>
+					</xsl:when>
+					<xsl:when test="$category='lesson'">
+					<xsl:text>{RESOURCES-LIST-AGGREGATION-LEVEL-LESSON}</xsl:text>
+					</xsl:when>
+					<xsl:otherwise>
+					<xsl:text>{RESOURCES-LIST-AGGREGATION-LEVEL-UNKNOWN}</xsl:text></xsl:otherwise>
 					</xsl:choose>
 					</xsl:attribute>
 				</xsl:element>
