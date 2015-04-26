@@ -87,7 +87,7 @@ class MainController {
 		}
 	}
 	public function processAuthentication($login, $password) {
-		$status = AuthorizationControl::getAuthorizationStatus ( $login, $password );
+		$status = AuthorizationControl::getAuthorizationStatus ( $login, $password,$this->parameters );
 		$this->setAuthorizationStatus ( $status );
 		if ($status == AuthorizationStatus::NOT_CONNECTED) {
 			$this->setInError ( true );
@@ -215,6 +215,8 @@ class MainController {
 		$this->updateUserPermissions ();
 	}
 	private function updateUserPermissions() {
+		if (! isset ( $this->parameters ) || ! is_array ( $this->parameters ) || ! array_key_exists ( "authorizations", $this->parameters ))
+			die ( "Les paramètres de configuration doivent définir des autorisations." );
 		$this->userPermissions = $this->parameters ["authorizations"] [$this->userAuthorizationStatus];
 	}
 	public function userIsAllowedToRead() {
