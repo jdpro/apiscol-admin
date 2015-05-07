@@ -1,15 +1,9 @@
 <?php
 class RestClient {
 	private $_url;
-	private $nonce;
 	private $editUrl;
-	private $login;
-	private $pass;
-	public function __construct($editUrl, $login, $pass) {
+	public function __construct($editUrl) {
 		$this->editUrl = $editUrl;
-		$this->login = $login;
-		$this->pass = $pass;
-		$this->nonce = null;
 	}
 	public function setUrl($pUrl) {
 		$this->_url = $pUrl;
@@ -17,10 +11,7 @@ class RestClient {
 	}
 	public function __sleep() {
 		return array (
-				'nonce',
-				'editUrl',
-				'login',
-				'pass' 
+				'editUrl' 
 		);
 	}
 	public function get($pParams = array()) {
@@ -35,7 +26,7 @@ class RestClient {
 		if (strstr ( $errorMessage, "HTTP/1.1 404" ))
 			throw new HttpNotFoundException ( $errorMessage );
 	}
-	public function post($pPostParams = array(), $pGetParams = array(), $accept = null, $contentType = null, $ifMatch = null, $authorization = null) {
+	public function post($pPostParams = array(), $pGetParams = array(), $accept = null, $contentType = null, $ifMatch = null) {
 		$headers = "";
 		if ($accept != null)
 			$headers .= "Accept: " . $accept . "\r\n";
@@ -43,22 +34,16 @@ class RestClient {
 			$headers .= "Content-type: " . $contentType . "\r\n";
 		if ($ifMatch != null)
 			$headers .= "If-Match: " . $ifMatch . "\r\n";
-		if ($authorization == null)
-			$authorization = $this->nonce;
-		$headers .= "Authorization: " . $authorization . "\r\n";
 		$response = $this->_launch ( $this->_makeUrl ( $pGetParams ), $this->_createContext ( 'POST', $pPostParams, $headers ) );
 		$this->renewAuthorization ( $response );
 		return $response;
 	}
-	public function postMultipartWithFile($pPostParams = array(), $name, $file, $accept = null, $ifMatch = null, $authorization = null) {
+	public function postMultipartWithFile($pPostParams = array(), $name, $file, $accept = null, $ifMatch = null) {
 		$headers = "";
 		if ($accept != null)
 			$headers .= "Accept: " . $accept . "\r\n";
 		if ($ifMatch != null)
 			$headers .= "If-Match: " . $ifMatch . "\r\n";
-		if ($authorization == null)
-			$authorization = $this->nonce;
-		$headers .= "Authorization: " . $authorization . "\r\n";
 		$data = "";
 		$boundary = "---------------------" . substr ( md5 ( rand ( 0, 32000 ) ), 0, 10 );
 		$headers .= "Content-Type: multipart/form-data; boundary=" . $boundary . "\r\n";
@@ -87,15 +72,12 @@ class RestClient {
 		$this->renewAuthorization ( $response );
 		return $response;
 	}
-	public function putMultipartWithXML($pPostParams = array(), $name, $fileContents, $accept = null, $ifMatch = null, $authorization = null) {
+	public function putMultipartWithXML($pPostParams = array(), $name, $fileContents, $accept = null, $ifMatch = null) {
 		$headers = "";
 		if ($accept != null)
 			$headers .= "Accept: " . $accept . "\r\n";
 		if ($ifMatch != null)
 			$headers .= "If-Match: " . $ifMatch . "\r\n";
-		if ($authorization == null)
-			$authorization = $this->nonce;
-		$headers .= "Authorization: " . $authorization . "\r\n";
 		$data = "";
 		$boundary = "---------------------" . substr ( md5 ( rand ( 0, 32000 ) ), 0, 10 );
 		$headers .= "Content-Type: multipart/form-data; boundary=" . $boundary . "\r\n";
@@ -123,7 +105,7 @@ class RestClient {
 		$this->renewAuthorization ( $response );
 		return $response;
 	}
-	public function put($pContent = array(), $pGetParams = array(), $accept = null, $contentType = null, $ifMatch = null, $authorization = null) {
+	public function put($pContent = array(), $pGetParams = array(), $accept = null, $contentType = null, $ifMatch = null) {
 		$headers = "";
 		if ($accept != null)
 			$headers .= "Accept: " . $accept . "\r\n";
@@ -131,14 +113,11 @@ class RestClient {
 			$headers .= "Content-type: " . $contentType . "\r\n";
 		if ($ifMatch != null)
 			$headers .= "If-Match: " . $ifMatch . "\r\n";
-		if ($authorization == null)
-			$authorization = $this->nonce;
-		$headers .= "Authorization: " . $authorization . "\r\n";
 		$response = $this->_launch ( $this->_makeUrl ( $pGetParams ), $this->_createContext ( 'PUT', $pContent, $headers ) );
 		$this->renewAuthorization ( $response );
 		return $response;
 	}
-	public function delete($pContent = array(), $pGetParams = array(), $accept = null, $contentType = null, $ifMatch = null, $authorization = null) {
+	public function delete($pContent = array(), $pGetParams = array(), $accept = null, $contentType = null, $ifMatch = null) {
 		$headers = "";
 		if ($accept != null)
 			$headers .= "Accept: " . $accept . "\r\n";
@@ -146,35 +125,8 @@ class RestClient {
 			$headers .= "Content-type: " . $contentType . "\r\n";
 		if ($ifMatch != null)
 			$headers .= "If-Match: " . $ifMatch . "\r\n";
-		if ($authorization == null)
-			$authorization = $this->nonce;
-		$headers .= "Authorization: " . $authorization . "\r\n";
 		$response = $this->_launch ( $this->_makeUrl ( $pGetParams ), $this->_createContext ( 'DELETE', $pContent, $headers ) );
-		$this->renewAuthorization ( $response );
 		return $response;
-	}
-	public function hasAuthorisationToken() {
-		return $this->nonce != null;
-	}
-	public function askAuthorisationToken() {
-		$response = $this->setUrl ( $this->editUrl )->post ( array (), array (), "application/xml", "application/x-www-form-urlencoded", null, $this->login . $this->pass );
-		$this->renewAuthorization ( $response );
-		if ($this->nonce == null)
-			throw new AuthorizationFailureException ( "Invalidation failure, impossible to obtain nonce from $this->editUrl" );
-		return false;
-	}
-	private function renewAuthorization($response) {
-		$this->nonce = null;
-		if ($response == false)
-			return;
-		$data = $response ["header"] ["wrapper_data"];
-		$matches = array ();
-		foreach ( $data as $line ) {
-			if (preg_match ( '/Authentification-Info: nextnonce="([^"]+)"/', $line, $matches )) {
-				$this->nonce = $matches [1];
-				return;
-			}
-		}
 	}
 	protected function _createContext($pMethod, $pContent = null, $headers = "") {
 		$opts = array (
@@ -204,8 +156,8 @@ class RestClient {
 			$header = $http_response_header;
 		else
 			throw new BadUrlRequestException ( $pUrl );
-		if(false===$stream)
-			throw new ConnexionFailureException($pUrl,$http_response_header);
+		if (false === $stream)
+			throw new ConnexionFailureException ( $pUrl, $http_response_header );
 		$content = stream_get_contents ( $stream );
 		$this->checkHeader ( $header, $content, $pUrl );
 		$header = stream_get_meta_data ( $stream );

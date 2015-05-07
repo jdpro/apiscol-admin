@@ -87,7 +87,7 @@ class MainController {
 		}
 	}
 	public function processAuthentication($login, $password) {
-		$status = AuthorizationControl::getAuthorizationStatus ( $login, $password,$this->parameters );
+		$status = AuthorizationControl::getAuthorizationStatus ( $login, $password, $this->parameters );
 		$this->setAuthorizationStatus ( $status );
 		if ($status == AuthorizationStatus::NOT_CONNECTED) {
 			$this->setInError ( true );
@@ -220,10 +220,10 @@ class MainController {
 		$this->userPermissions = $this->parameters ["authorizations"] [$this->userAuthorizationStatus];
 	}
 	public function userIsAllowedToRead() {
-		return $this->userPermissionsContains ( 'r' );
+		return $this->userPermissionsContains ( 'READ' );
 	}
 	public function userIsAllowedToWrite() {
-		return $this->userPermissionsContains ( 'w' );
+		return $this->userPermissionsContains ( 'WRITE' );
 	}
 	private function userPermissionsContains($char) {
 		return strstr ( $this->userPermissions, $char ) !== FALSE;

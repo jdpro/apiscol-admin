@@ -5,7 +5,10 @@ class ServiceAccess {
 	private $client;
 	public function __construct($parameters) {
 		$this->parameters = $parameters;
-		$this->client = new RestClient ( $this->parameters ["services"] ["edit"], $this->parameters ["identifiers"] ["login"], $this->parameters ["identifiers"] ["pass"] );
+		if (! is_null ( $this->parameters ) && is_array ( $this->parameters ) )
+			$this->client = new RestClient ( $this->parameters ["services"] ["edit"]);
+		else
+			throw new Exception ( "La session a expiré" );
 	}
 	public function __sleep() {
 		return array (
