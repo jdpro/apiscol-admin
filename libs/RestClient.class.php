@@ -35,7 +35,6 @@ class RestClient {
 		if ($ifMatch != null)
 			$headers .= "If-Match: " . $ifMatch . "\r\n";
 		$response = $this->_launch ( $this->_makeUrl ( $pGetParams ), $this->_createContext ( 'POST', $pPostParams, $headers ) );
-		$this->renewAuthorization ( $response );
 		return $response;
 	}
 	public function postMultipartWithFile($pPostParams = array(), $name, $file, $accept = null, $ifMatch = null) {
@@ -69,7 +68,6 @@ class RestClient {
 				) 
 		);
 		$response = $this->_launch ( $this->_makeUrl ( array () ), stream_context_create ( $params ) );
-		$this->renewAuthorization ( $response );
 		return $response;
 	}
 	public function putMultipartWithXML($pPostParams = array(), $name, $fileContents, $accept = null, $ifMatch = null) {
@@ -102,7 +100,6 @@ class RestClient {
 				) 
 		);
 		$response = $this->_launch ( $this->_makeUrl ( array () ), stream_context_create ( $params ) );
-		$this->renewAuthorization ( $response );
 		return $response;
 	}
 	public function put($pContent = array(), $pGetParams = array(), $accept = null, $contentType = null, $ifMatch = null) {
@@ -114,7 +111,6 @@ class RestClient {
 		if ($ifMatch != null)
 			$headers .= "If-Match: " . $ifMatch . "\r\n";
 		$response = $this->_launch ( $this->_makeUrl ( $pGetParams ), $this->_createContext ( 'PUT', $pContent, $headers ) );
-		$this->renewAuthorization ( $response );
 		return $response;
 	}
 	public function delete($pContent = array(), $pGetParams = array(), $accept = null, $contentType = null, $ifMatch = null) {
